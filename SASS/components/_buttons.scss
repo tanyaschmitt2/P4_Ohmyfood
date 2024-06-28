@@ -1,4 +1,4 @@
-/* Info Group */
+/* Submit Button Style*/
 .info-group-p {
     margin-bottom: 20px;
 }
@@ -12,4 +12,28 @@
     width: 3.125rem;
     height: 3.063rem;
     border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+
+
+.search-icon {
+    cursor: pointer;
+    float: right;
+    padding: .625rem;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    height: 3.063rem;
+    font-weight: bold;
+    border-color: blue;
+    border-radius: 0rem 1rem 1rem 0rem;
+    border-right: none;
+    /* Prevent double borders */
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.fa-magnifying-glass {
+    display: none;
 }

@@ -1,6 +1,6 @@
 :root {
   --main-color: #0065FC;
-  --main-bg-color: #F2F2F2;
+  --main-bg-color: #F6F6F6;
   --filter-bg-color: #DEEBFF;
 }
 
@@ -11,10 +11,6 @@
 body {
   display: flex;
   justify-content: center;
-}
-
-header {
-  height: 80px;
 }
 
 .main-container {

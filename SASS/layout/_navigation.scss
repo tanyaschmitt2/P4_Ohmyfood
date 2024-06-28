@@ -1,0 +1,33 @@
+/*Navigation Menu*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.navbar ul {
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 50%;
+    width: 100%;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar ul li:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+

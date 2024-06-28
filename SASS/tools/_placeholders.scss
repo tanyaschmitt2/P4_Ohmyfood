@@ -1,0 +1,20 @@
+
+#site-search::placeholder { /* pour les navigateurs modernes */
+    color: black;
+}
+
+#site-search::-webkit-input-placeholder { /* pour Google Chrome */
+    color: black;
+}
+
+#site-search::-moz-placeholder { /* pour Mozilla Firefox */
+    color: black;
+}
+
+#site-search:-ms-input-placeholder { /* pour Internet Explorer */
+    color: black;
+}
+
+#site-search:-o-input-placeholder { /* pour Opera */
+    color: black;
+}

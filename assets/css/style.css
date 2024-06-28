@@ -1,3 +1,136 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
 
+:root {
+  --main-color: #0065FC;
+  --main-bg-color: #F2F2F2;
+  --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  height: 80px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0rem;
+  font-size: 1.375rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 0.313rem;
+  filter: drop-shadow(0rem 0.188rem 0.938rem rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 0.9rem;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+form {
+  display: flex;
+}
+
+/*General Navigator Reset*/
+.html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body,
+.ol,
+.ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.ol,
+.ul {
+  list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.p {
+  margin: 5px 0;
+}
+
+/* Info Group */
+.info-group-p {
+  margin-bottom: 20px;
+}
+
+.fa-location-dot {
+  display: flex;
+  color: grey;
+  background-color: #F2F2F2;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.063rem;
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+
+#site-search::placeholder { /* pour les navigateurs modernes */
+  color: black;
+}
+
+#site-search::-webkit-input-placeholder { /* pour Google Chrome */
+  color: black;
+}
+
+#site-search::-moz-placeholder { /* pour Mozilla Firefox */
+  color: black;
+}
+
+#site-search:-ms-input-placeholder { /* pour Internet Explorer */
+  color: black;
+}
+
+#site-search:-o-input-placeholder { /* pour Opera */
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */

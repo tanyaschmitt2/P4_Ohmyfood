@@ -1,18 +1,269 @@
-/* Error: Expected digit.
- *    ,
- * 24 |     width:100%.
- *    |                ^
- *    '
- *   SASS\pages\_home.scss 24:16  @import
- *   SASS\main.scss 16:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected digit.\a    \2577 \a 24 \2502      width:100%.\d\a    \2502                 ^\a    \2575 \a   SASS\\pages\\_home.scss 24:16  @import\a   SASS\\main.scss 16:9          root stylesheet";
+:root {
+  --main-color: #0065FC;
+  --main-bg-color: #F6F6F6;
+  --filter-bg-color: #DEEBFF;
 }
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 375px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0rem;
+  font-size: 1.375rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 0.313rem;
+  filter: drop-shadow(0rem 0.188rem 0.938rem rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 0.9rem;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+form {
+  display: flex;
+}
+
+/*General Navigator Reset*/
+.html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body,
+.ol,
+.ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.ol,
+.ul {
+  list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.p {
+  margin: 5px 0;
+}
+
+* {
+  font-family: "Robot", sans-serif;
+}
+
+/*Button Style*/
+.fa-location-dot {
+  display: flex;
+  color: grey;
+  background-color: #F2F2F2;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.063rem;
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+
+.fa-heart {
+  cursor: pointer;
+  float: right;
+  padding: 0.625rem;
+  background-color: pink;
+  color: white;
+  font-size: 1rem;
+  height: 3.063rem;
+  font-weight: bold;
+  border-color: pink;
+  border-radius: 0rem 1rem 1rem 0rem;
+  border-right: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  display: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-group button {
+  all: unset;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 20px;
+  font-weight: 800;
+  border: 1px solid #D9D9D9;
+  /* Grey tint border */
+  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+  padding: 0.625rem;
+  /* Some padding */
+  cursor: pointer;
+  /* Pointer/hand icon */
+}
+
+/* Background colour on hover */
+.btn-group button:hover {
+  background-color: #DEEBFF;
+}
+
+.filter-icons::before {
+  display: inline-block;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fa-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  padding: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+/* Header */
+header {
+  height: 80px;
+}
+
+/*Navigation Menu*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-size: 1rem;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 50%;
+  width: 100%;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar ul li:hover {
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+}
+
+/*Navigation Logo*/
+.logo1 {
+  justify-content: left;
+}
+
+.logo1 img {
+  width: 61.09px;
+  height: 19px;
+}
+
+.restaurant-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.restaurant-cards {
+  width: 340px;
+}
+
+.restaurant-cards .card {
+  width: 340px;
+}
+
+.restaurant-cards .img {
+  width: 100%;
+}
+
+.restaurantimg {
+  width: 100%;
+}
+
+#site-search::placeholder { /* pour les navigateurs modernes */
+  color: black;
+}
+
+#site-search::-webkit-input-placeholder { /* pour Google Chrome */
+  color: black;
+}
+
+#site-search::-moz-placeholder { /* pour Mozilla Firefox */
+  color: black;
+}
+
+#site-search:-ms-input-placeholder { /* pour Internet Explorer */
+  color: black;
+}
+
+#site-search:-o-input-placeholder { /* pour Opera */
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

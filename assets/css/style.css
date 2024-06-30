@@ -93,11 +93,7 @@ form {
   font-family: "Robot", sans-serif;
 }
 
-/* Submit Button Style*/
-.info-group-p {
-  margin-bottom: 20px;
-}
-
+/*Button Style*/
 .fa-location-dot {
   display: flex;
   color: grey;
@@ -109,19 +105,18 @@ form {
   border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
 
-.search-icon {
+.fa-heart {
   cursor: pointer;
   float: right;
   padding: 0.625rem;
-  background-color: blue;
+  background-color: pink;
   color: white;
   font-size: 1rem;
   height: 3.063rem;
   font-weight: bold;
-  border-color: blue;
+  border-color: pink;
   border-radius: 0rem 1rem 1rem 0rem;
   border-right: none;
-  /* Prevent double borders */
 }
 
 .submit:hover {
@@ -227,6 +222,24 @@ header {
 .logo1 img {
   width: 61.09px;
   height: 19px;
+}
+
+.restaurant-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.restaurant-cards {
+  width: 100%;
+}
+
+.restaurant-cards .card {
+  width: 100%;
+}
+
+.restaurant-cards .img {
+  width: 100%;
 }
 
 #site-search::placeholder { /* pour les navigateurs modernes */

@@ -1,7 +1,5 @@
-/* Submit Button Style*/
-.info-group-p {
-    margin-bottom: 20px;
-}
+/*Button Style*/
+
 
 .fa-location-dot {
     display: flex;
@@ -15,20 +13,23 @@
 }
 
 
-.search-icon {
+.fa-heart{
     cursor: pointer;
     float: right;
     padding: .625rem;
-    background-color: blue;
+    background-color: pink;
     color: white;
     font-size: 1rem;
     height: 3.063rem;
     font-weight: bold;
-    border-color: blue;
+    border-color: pink;
     border-radius: 0rem 1rem 1rem 0rem;
     border-right: none;
-    /* Prevent double borders */
+
 }
+
+
+
 
 .submit:hover {
     cursor: pointer;

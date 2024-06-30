@@ -94,6 +94,11 @@ form {
 }
 
 /*Button Style*/
+.fa-arrow-left {
+  display: none;
+  color: black;
+}
+
 .fa-location-dot {
   display: flex;
   color: grey;
@@ -190,8 +195,10 @@ header {
 /*Navigation Menu*/
 .navbar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
   padding: 0;
   font-size: 1rem;
   background-color: #FFFFFF;

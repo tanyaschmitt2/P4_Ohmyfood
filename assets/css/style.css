@@ -16,7 +16,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 375px;
-  padding: 0 50px;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 

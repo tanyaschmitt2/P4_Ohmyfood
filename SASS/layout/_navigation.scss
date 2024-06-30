@@ -9,34 +9,13 @@
     height: 100%;
 }
 
-.navbar ul {
-    height: 100%;
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    height: 50%;
-    width: 100%;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-}
-
-.navbar ul li:hover {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
-}
-
 /*Navigation Logo*/
 .logo1 {
-    justify-content: left;
+    display: flex;
+    justify-content: center;
 }
 
 .logo1 img {
-    width: 61.09px;
-    height: 19px;
+    width: 197px;
+    height: 36px;
 }

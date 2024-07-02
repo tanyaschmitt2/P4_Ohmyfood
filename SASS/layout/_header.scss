@@ -1,4 +1,66 @@
 /* Header */
 
+.homepage-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 63px;
+}
+
+.homepage-header-ohmyfood-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-header-ohmyfood-logo img {
+     height: 30px;
+}
+
+.homepage-header-location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #eaeaea;
+    box-shadow: 2px;
+    gap: 17px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-banner-location-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background-color: #eaeaea;
+
+}
 
 

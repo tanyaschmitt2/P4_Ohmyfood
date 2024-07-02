@@ -100,20 +100,17 @@ form {
 
 .fa-location-dot {
   display: flex;
-  color: grey;
-  background-color: #F2F2F2;
+  color: #353535;
   align-items: center;
   justify-content: center;
-  width: 3.125rem;
-  height: 3.063rem;
-  border-radius: 1.25rem 0rem 0rem 1.25rem;
+  width: 12px;
+  height: 16px;
 }
 
 .fa-heart {
   cursor: pointer;
   float: right;
   padding: 0.625rem;
-  background-color: pink;
   color: white;
   font-size: 1rem;
   height: 3.063rem;
@@ -187,6 +184,45 @@ footer {
 }
 
 /* Header */
+.homepage-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 63px;
+}
+
+.homepage-header-ohmyfood-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-header-ohmyfood-logo img {
+  height: 30px;
+}
+
+.homepage-header-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: 2px;
+  gap: 17px;
+}
+
+.hero-banner-location-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #eaeaea;
+}
+
 /*Navigation Menu*/
 .navbar {
   display: flex;

@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10% 20%;
+    padding: 2% 20%;
 }
 
 .homepage-header-ohmyfood-logo img {
@@ -21,15 +21,11 @@
 
 .homepage-header-location {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 50px;
     background-color: #eaeaea;
     box-shadow: 2px;
-    gap: 17px;
-
+    gap: 5%;
 }
 
 

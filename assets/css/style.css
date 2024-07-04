@@ -189,7 +189,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   background-color: #FFFFFF;
-  height: 63px;
 }
 
 .homepage-header-ohmyfood-logo {
@@ -197,6 +196,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10% 20%;
 }
 
 .homepage-header-ohmyfood-logo img {

@@ -15,12 +15,31 @@
     height: 16px;
 }
 
+.explore-button {
+display: flex;
+justify-content: center;
+align-items: center;
+ /* Border */
+ border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+ padding: .625rem;
+ color: white;
+/* Pointer/hand icon */
+ cursor: pointer;
+ 
+}
+
+
+
+/* Background colour on hover */
+.explore-button button:hover {
+    background-color: #DEEBFF;
+}
+
 
 .fa-heart{
     cursor: pointer;
     float: right;
     padding: .625rem;
-  
     color: white;
     font-size: 1rem;
     height: 3.063rem;
@@ -32,14 +51,8 @@
 }
 
 
-
-
 .submit:hover {
     cursor: pointer;
-}
-
-.fa-magnifying-glass {
-    display: none;
 }
 
 

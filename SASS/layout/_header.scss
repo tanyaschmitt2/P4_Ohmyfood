@@ -15,10 +15,6 @@
     padding: 2% 20%;
 }
 
-.homepage-header-ohmyfood-logo img {
-     height: 30px;
-}
-
 .homepage-header-location {
     display: flex;
     justify-content: center;
@@ -28,36 +24,29 @@
     gap: 5%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hero-banner-location-section {
+.hero-banner-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 17px;
-    background-color: #eaeaea;
-
+   
 }
 
+.hero-banner-info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero-banner-info-section-title{
+    display: flex;
+    flex-direction: column;
+}
+        
+.hero-banner-title h1{
+    display: flex;
+    flex-direction: column;
+}
+                    
+                

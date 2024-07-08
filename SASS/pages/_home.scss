@@ -5,7 +5,7 @@
     background-color: #FFFFFF;
     height: 440px;
     padding: 5%;
-    margin: 0;
+    margin-bottom: 20%;
 }
 
 h1.fonctionnement-section-title {
@@ -47,32 +47,34 @@ h1.fonctionnement-section-title {
     cursor: pointer;
     font-weight: bold;
     position: absolute;
-    left: 5%;
+    left: -3%;
 
 }
 
 .restaurant-section {
     display: flex;
     flex-direction: column;
-    background-color: white;
-
+    background-color: rgba(210, 210, 210, .3);
+    margin-top: 20%;
+    margin-bottom: 20%;
+   
+  
 }
+
 
 .restaurant-cards {
-width: 340px;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0;
+    height: 251px;
+
 }
 
-.restaurant-cards .card{
-width: 340px;  
-}
+.restaurant-cards img{
+    height: 221px;
+    object-fit: cover;
 
-.restaurant-cards .img{
-width: 100%;
-}
-
-
-.restaurantimg{
-    width:100%;
 }
 
 

@@ -143,8 +143,9 @@ form {
   cursor: pointer;
   font-size: 30px;
   border-color: black;
-  font-weight: 100;
+  font-weight: lighter;
   position: absolute;
+  margin-top: 10%;
   right: 15%;
 }
 
@@ -381,6 +382,7 @@ h1.restaurant-section-title {
 .restaurant-card-title {
   padding-left: 5%;
   padding-bottom: 0%;
+  margin-bottom: 0%;
 }
 
 .restaurant-card-subtitle {
@@ -407,4 +409,4 @@ h1.restaurant-section-title {
   color: black;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMapping

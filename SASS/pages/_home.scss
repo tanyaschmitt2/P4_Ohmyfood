@@ -93,7 +93,11 @@ h1.restaurant-section-title {
     width: 100%;
 
 }
+.restaurant-card-content{
+    display: flex;
+    flex-direction: column;
 
+}
 
 .restaurant-card-title {
     padding-left: 5%;

@@ -44,6 +44,8 @@ color: #9356DC;
 
 
 .fa-heart{
+    display: flex;
+    justify-content: right;
     cursor: pointer;
     font-size: 30px;
     border-color: black;

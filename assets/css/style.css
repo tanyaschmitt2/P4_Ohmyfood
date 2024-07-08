@@ -138,6 +138,8 @@ form {
 }
 
 .fa-heart {
+  display: flex;
+  justify-content: right;
   cursor: pointer;
   font-size: 30px;
   border-color: black;
@@ -371,6 +373,11 @@ h1.restaurant-section-title {
   width: 100%;
 }
 
+.restaurant-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .restaurant-card-title {
   padding-left: 5%;
   padding-bottom: 0%;
@@ -396,8 +403,4 @@ h1.restaurant-section-title {
   color: black;
 }
 
-#site-search:-o-input-placeholder { /* pour Opera */
-  color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
+#site-search:-o-input-placeholder { /

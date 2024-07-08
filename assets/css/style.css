@@ -120,7 +120,6 @@ form {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  width: 60%;
   padding: 0.625rem;
   color: white;
   cursor: pointer;
@@ -163,59 +162,6 @@ form {
   flex-wrap: wrap;
   gap: 5%;
   color: white;
-}
-
-.submit:hover {
-  cursor: pointer;
-}
-
-.btn-group {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.btn-group button {
-  all: unset;
-  display: flex;
-  justify-content: flex-start;
-  align-items: start;
-  gap: 20px;
-  font-weight: 800;
-  border: 1px solid #D9D9D9;
-  /* Grey tint border */
-  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  padding: 0.625rem;
-  /* Some padding */
-  cursor: pointer;
-  /* Pointer/hand icon */
-}
-
-/* Background colour on hover */
-.btn-group button:hover {
-  background-color: #DEEBFF;
-}
-
-.filter-icons::before {
-  display: inline-block;
-}
-
-.info-icon {
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-  margin-bottom: 20px;
-}
-
-.fa-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #D9D9D9;
-  border-radius: 50%;
-  padding: 3px;
-  width: 25px;
-  height: 25px;
 }
 
 /*Footer*/

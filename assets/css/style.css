@@ -120,7 +120,7 @@ form {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  padding: 0.625rem;
+  padding: 10px;
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -170,13 +170,13 @@ form {
   flex-direction: column;
   background-color: #353535;
   color: white;
-  gap: 30px;
+  margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .homepage-footer-ohmyfood-logo img {
   fill: white;
   margin-top: 10%;
-  margin-bottom: 10%;
 }
 
 ul {
@@ -184,10 +184,16 @@ ul {
   height: 100%;
 }
 
+footer p {
+  display: flex;
+  font-size: medium;
+  gap: 5%;
+}
+
 li {
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  padding: 0%;
 }
 
 /* Header */

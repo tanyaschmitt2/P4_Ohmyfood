@@ -403,4 +403,8 @@ h1.restaurant-section-title {
   color: black;
 }
 
-#site-search:-o-input-placeholder { /
+#site-search:-o-input-placeholder { /* pour Opera */
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,26 @@
+.fonctionnement-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 440px;
+    padding: 5%;
+    margin: 0;
+}
+
+h1.fonctionnement-section-title {
+    text-align: center;
+    padding: 15% 5%;
+    
+}
+
+.fonctionnementcards .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
 .restaurant-section {
     display: flex;
     flex-direction: column;

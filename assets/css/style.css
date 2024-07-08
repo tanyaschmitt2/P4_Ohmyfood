@@ -149,6 +149,22 @@ form {
   right: 15%;
 }
 
+.fa-utensils {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  color: white;
+}
+
+.fa-handshake-angle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  color: white;
+}
+
 .submit:hover {
   cursor: pointer;
 }
@@ -203,9 +219,29 @@ form {
 }
 
 /*Footer*/
-footer {
+.footermenu {
+  display: flex;
   flex-direction: column;
+  background-color: #353535;
+  color: white;
   gap: 30px;
+}
+
+.homepage-footer-ohmyfood-logo img {
+  fill: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
 }
 
 /* Header */

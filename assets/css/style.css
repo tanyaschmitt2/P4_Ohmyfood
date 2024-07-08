@@ -139,15 +139,11 @@ form {
 
 .fa-heart {
   cursor: pointer;
-  float: right;
-  padding: 0.625rem;
-  color: white;
-  font-size: 1rem;
-  height: 3.063rem;
-  font-weight: bold;
-  border-color: pink;
-  border-radius: 0rem 1rem 1rem 0rem;
-  border-right: none;
+  font-size: 30px;
+  border-color: black;
+  font-weight: 100;
+  position: absolute;
+  right: 15%;
 }
 
 .submit:hover {
@@ -343,19 +339,45 @@ h1.fonctionnement-section-title {
   background-color: rgba(210, 210, 210, 0.3);
   margin-top: 20%;
   margin-bottom: 20%;
+  padding: 5%;
+}
+
+h1.restaurant-section-title {
+  text-align: left;
+  padding: 15% 5%;
 }
 
 .restaurant-cards {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  gap: 5%;
   padding: 0;
-  height: 251px;
+}
+
+.restaurant-card {
+  border-radius: 30px;
+  background-color: white;
+  height: 100%;
+  padding-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .restaurant-cards img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   height: 221px;
-  object-fit: cover;
+  width: 100%;
+}
+
+.restaurant-card-title {
+  padding-left: 5%;
+  padding-bottom: 0%;
+}
+
+.restaurant-card-subtitle {
+  padding-left: 5%;
 }
 
 #site-search::placeholder { /* pour les navigateurs modernes */

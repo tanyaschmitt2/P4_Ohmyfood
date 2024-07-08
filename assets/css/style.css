@@ -64,7 +64,7 @@ form {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: none;
 }
 
 .body,
@@ -202,6 +202,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   background-color: #FFFFFF;
+  box-shadow: 0 2PX 1PX 0PX lightgrey;
 }
 
 .homepage-header-ohmyfood-logo {
@@ -209,15 +210,19 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2% 20%;
+  height: 113px;
+}
+
+.homepage-header-ohmyfood-logo img {
+  height: 63px;
 }
 
 .homepage-header-location {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eaeaea;
-  box-shadow: 2px;
+  box-shadow: 0 4PX 2PX 0PX lightgrey;
+  background-color: rgba(234, 234, 234, 0.9176470588);
   gap: 5%;
 }
 

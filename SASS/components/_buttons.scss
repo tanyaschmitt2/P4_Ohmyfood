@@ -19,13 +19,17 @@
 display: flex;
 justify-content: center;
 align-items: center;
- /* Border */
- border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+background: linear-gradient(45deg, #FF79DA, #9356DC);
+border: none;
+border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+ width: 60%;
  padding: .625rem;
- color: white;
-/* Pointer/hand icon */
- cursor: pointer;
- 
+color: white;
+
+cursor: pointer;
+font-weight: bold;
+
+
 }
 
 

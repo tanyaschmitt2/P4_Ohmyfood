@@ -4,20 +4,20 @@
     justify-content: center;
     background-color: #FFFFFF;
     height: 440px;
-    padding: 5%;
+    padding: 5px;
     margin-bottom: 20%;
 }
 
 h1.fonctionnement-section-title {
     text-align: left;
-    padding: 15% 5%;
+    padding: 15px 5px;
     
 }
 
 .fonctionnementcards{
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 5px;
 
 }
 
@@ -28,8 +28,8 @@ h1.fonctionnement-section-title {
     align-items: center;
     background-color: white;
     border-radius: 1.25rem;
-    margin-bottom: 10%;
-    padding: .313rem;
+    margin-bottom: 10px;
+    padding: 10px;
     background-color: rgba(210, 210, 210, .3);
     filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));   
 }
@@ -40,8 +40,8 @@ h1.fonctionnement-section-title {
     align-items: center;
     background-color: #9356DC;
     border: none;
-    border-radius: 55%;
-     width: 5%;
+    border-radius: 55px;
+     width: 5px;
      padding: 2px;
     color: white;
     cursor: pointer;
@@ -55,16 +55,16 @@ h1.fonctionnement-section-title {
     display: flex;
     flex-direction: column;
     background-color: rgba(210, 210, 210, .3);
-    margin-top: 20%;
-    margin-bottom: 20%;
-    padding: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
    
   
 }
 
 h1.restaurant-section-title {
     text-align: left;
-    padding: 15% 5%;
+    padding: 15px 5px;
 }
 
 .restaurant-cards {
@@ -72,7 +72,7 @@ h1.restaurant-section-title {
     flex-direction: column;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    gap: 5%;
+    gap: 5px;
     padding: 0;
     
 }
@@ -81,8 +81,8 @@ h1.restaurant-section-title {
     border-radius: 30px;
     background-color: white;
     height: 100%;
-    padding-bottom: 5%;
-    margin-bottom: 10%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
     
 }
 
@@ -100,13 +100,13 @@ h1.restaurant-section-title {
 }
 
 .restaurant-card-title {
-    padding-left: 5%;
+    padding-left: 5px;
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
 
 .restaurant-card-subtitle {
-    padding-left: 5%;
+    padding-left: 5px;
 }
 
 

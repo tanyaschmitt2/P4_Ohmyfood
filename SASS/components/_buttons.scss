@@ -16,22 +16,22 @@
 }
 
 .explore-button {
-display: flex;
-justify-content: center;
-align-items: center;
-background: linear-gradient(180deg, #FF79DA, #9356DC);
-border: none;
-border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-padding: 10px;
-color: white;
-cursor: pointer;
-font-weight: bold;
-filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    border: none;
+    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
 
 }
 
 .fa-store {
-color: #9356DC;
+    color: #9356DC;
 }
 
 
@@ -42,7 +42,7 @@ color: #9356DC;
 }
 
 
-.fa-heart{
+.fa-heart {
     display: flex;
     justify-content: right;
     cursor: pointer;
@@ -50,12 +50,12 @@ color: #9356DC;
     border-color: black;
     font-weight: lighter;
     position: absolute;
-    margin-top: 10px;
+    top: 20px;
     right: 15px;
 
 }
 
-.fa-utensils{
+.fa-utensils {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,7 +63,7 @@ color: #9356DC;
     color: white;
 }
 
-.fa-handshake-angle{
+.fa-handshake-angle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

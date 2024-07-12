@@ -1,10 +1,8 @@
-
-
 :root {
     --main-color: black;
     --main-bg-color: #F6F6F6;
     --filter-bg-color: #DEEBFF;
-    --primary-gray:#D9D9D9;
+    --primary-gray: #D9D9D9;
 }
 
 .fa-solid {
@@ -14,6 +12,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -61,4 +60,3 @@ a {
 form {
     display: flex;
 }
-

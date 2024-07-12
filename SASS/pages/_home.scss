@@ -3,50 +3,52 @@
     flex-direction: column;
     justify-content: center;
     background-color: #FFFFFF;
-    padding: 5px;
-    margin-bottom: 20%;
+    padding: 40px 20px 40px 20px;
+
 }
 
 h1.fonctionnement-section-title {
     text-align: left;
-    padding: 15px 5px;
-    
+
+
 }
 
-.fonctionnementcards{
+.fonctionnementcards {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
+
 
 }
 
 
 .fonctionnement-card-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 1.25rem;
-    margin-bottom: 10px;
+    gap: 15px;
     padding: 10px;
     background-color: rgba(210, 210, 210, .3);
-    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));   
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
+    position: relative;
 }
 
-.fonctionnement-number-card{
+.fonctionnement-number-card {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #9356DC;
     border: none;
-    border-radius: 55px;
-     width: 5px;
-     padding: 2px;
+    border-radius: 50%;
+    width: 20px;
+    padding: 5px;
     color: white;
     cursor: pointer;
     font-weight: bold;
     position: absolute;
-    left: -3%;
+    left: -15%;
 
 }
 
@@ -54,11 +56,12 @@ h1.fonctionnement-section-title {
     display: flex;
     flex-direction: column;
     background-color: rgba(210, 210, 210, .3);
+    padding: 50px 20px 50px 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px;
-   
-  
+
+
+
 }
 
 h1.restaurant-section-title {
@@ -73,7 +76,7 @@ h1.restaurant-section-title {
     border-top-right-radius: 30px;
     gap: 5px;
     padding: 0;
-    
+
 }
 
 .restaurant-card {
@@ -82,19 +85,23 @@ h1.restaurant-section-title {
     height: 100%;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    
+    gap: 30px;
+
 }
 
-.restaurant-cards img{
+.restaurant-cards img {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     height: 221px;
     width: 100%;
+    object-fit: cover;
 
 }
-.restaurant-card-content{
+
+.restaurant-card-content {
     display: flex;
     flex-direction: column;
+    position: relative;
 
 }
 
@@ -107,5 +114,3 @@ h1.restaurant-section-title {
 .restaurant-card-subtitle {
     padding-left: 5px;
 }
-
-

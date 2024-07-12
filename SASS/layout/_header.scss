@@ -14,19 +14,19 @@
     justify-content: center;
     align-items: center;
     height: 113px;
-    
+
 }
 
 .homepage-header-ohmyfood-logo img {
     height: 63px;
-   
+
 }
 
 .homepage-header-location {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));    
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
     background-color: #D9D9D9;
     gap: 10px;
 }
@@ -38,7 +38,7 @@
     align-items: center;
     background-color: rgba(210, 210, 210, .3);
     padding: 30px 0 50px 0;
-  
+
 }
 
 .hero-banner-info-section {
@@ -47,16 +47,15 @@
     justify-content: center;
     align-items: center;
 }
-        
+
 h1.hero-banner-title {
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 0px;
+    text-align: center;
+
+    margin-bottom: 0px;
 }
 
 p.hero-banner-text {
-     text-align: center;
-     padding-bottom: 40px;
-     
+    text-align: center;
+    padding-bottom: 15px;
+
 }
-                    

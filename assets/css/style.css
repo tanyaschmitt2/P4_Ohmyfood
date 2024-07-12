@@ -233,7 +233,7 @@ li {
   justify-content: center;
   align-items: center;
   background-color: rgba(210, 210, 210, 0.3);
-  padding: 100px 0 50px 0;
+  padding: 30px 0 50px 0;
 }
 
 .hero-banner-info-section {
@@ -251,7 +251,7 @@ h1.hero-banner-title {
 
 p.hero-banner-text {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 /*Navigation Menu*/
@@ -280,7 +280,6 @@ p.hero-banner-text {
   flex-direction: column;
   justify-content: center;
   background-color: #FFFFFF;
-  height: 440px;
   padding: 5px;
   margin-bottom: 20%;
 }

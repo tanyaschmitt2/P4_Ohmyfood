@@ -65,7 +65,6 @@ a {
 }
 
 .h1 {
-  font-family: shrikhand;
   font-size: 24px;
 }
 
@@ -84,6 +83,11 @@ a {
 
 * {
   font-family: "Robot", sans-serif;
+}
+
+.h1,
+.h2 {
+  font-family: Shrikhand;
 }
 
 /*Button Style*/
@@ -173,6 +177,10 @@ right: 15px;
   flex-wrap: wrap;
   gap: 5px;
   color: white;
+}
+
+.white-ohmyfood-logo {
+  font-family: shrikhand;
 }
 
 /*Footer*/

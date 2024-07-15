@@ -18,7 +18,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -40,23 +40,3 @@ a {
     filter: drop-shadow(0rem .188rem .938rem rgba(0, 0, 0, 0.1));
 }
 
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: .9rem;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
-
-
-form {
-    display: flex;
-}

@@ -144,18 +144,19 @@ a {
   right: 15px;
 }
 
-#pinkheart {
-  display: flex;
-  justify-content: right;
-  cursor: pointer;
-  font-size: 30px;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
-  font-weight: lighter;
-  position: absolute;
-  top: 20px;
-  right: 15px;
-}
-
+/*#pinkheart {
+display: flex;
+justify-content: right;
+cursor: pointer;
+font-size: 30px;
+style="color: linear-gradient(180deg, #FF79DA, #9356DC);"></i>
+background-color: linear-gradient(180deg, #FF79DA, #9356DC);
+color: linear-gradient(180deg, #FF79DA, #9356DC);
+font-weight: lighter;
+position: absolute;
+top: 20px;
+right: 15px;
+}*/
 .fa-utensils {
   display: flex;
   flex-direction: row;

@@ -192,20 +192,24 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 113px;
+  height: 63px;
+  margin-top: 10px;
 }
 
 .homepage-header-ohmyfood-logo img {
-  height: 63px;
+  height: 40px;
 }
 
 .homepage-header-location {
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
-  background-color: #D9D9D9;
-  gap: 10px;
+  background-color: #EAEAEA;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .hero-banner-section {
@@ -213,7 +217,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(210, 210, 210, 0.3);
+  background-color: #f6f6f6;
   padding: 30px 0 50px 0;
 }
 

@@ -102,10 +102,9 @@ a {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  padding: 10px;
+  padding: 15px;
   color: white;
   cursor: pointer;
-  font-weight: bold;
   filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
 }
 
@@ -264,7 +263,8 @@ p.hero-banner-text {
   flex-direction: column;
   justify-content: center;
   background-color: #FFFFFF;
-  padding: 40px 20px 40px 20px;
+  padding: 30px 20px 40px 20px;
+  margin: 0 15px;
 }
 
 h1.fonctionnement-section-title {
@@ -281,11 +281,10 @@ h1.fonctionnement-section-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   border-radius: 1.25rem;
   gap: 15px;
   padding: 10px;
-  background-color: rgba(210, 210, 210, 0.3);
+  background-color: #f6f6f6;
   filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
   position: relative;
 }
@@ -304,6 +303,10 @@ h1.fonctionnement-section-title {
   font-weight: bold;
   position: absolute;
   left: -15%;
+}
+
+h2.fonctionnement {
+  text-align: center;
 }
 
 .restaurant-section {

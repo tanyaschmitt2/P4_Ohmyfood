@@ -286,8 +286,9 @@ h1.fonctionnement-section-title {
   justify-content: center;
   align-items: center;
   border-radius: 1.25rem;
-  gap: 15px;
-  padding: 10px;
+  gap: 20px;
+  padding: 10px 25px;
+  font-size: 11px;
   background-color: #f6f6f6;
   filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
   position: relative;
@@ -300,7 +301,7 @@ h1.fonctionnement-section-title {
   background-color: #9356DC;
   border: none;
   border-radius: 50%;
-  width: 20px;
+  width: 12px;
   padding: 5px;
   color: white;
   cursor: pointer;
@@ -309,7 +310,7 @@ h1.fonctionnement-section-title {
   left: -5%;
 }
 
-h2.fonctionnement {
+h2.fonctionnementcards {
   text-align: center;
 }
 

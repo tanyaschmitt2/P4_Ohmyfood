@@ -5,7 +5,6 @@
     background-color: #FFFFFF;
     padding: 30px 20px 40px 20px;
     margin: 0 15px;
-
 }
 
 h1.fonctionnement-section-title {
@@ -16,7 +15,6 @@ h1.fonctionnement-section-title {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  
 }
 
 
@@ -47,7 +45,6 @@ h1.fonctionnement-section-title {
     font-weight: bold;
     position: absolute;
     left: -5%;
-
 }
 
 
@@ -76,7 +73,6 @@ h1.restaurant-section-title {
     border-top-right-radius: 30px;
     gap: 5px;
     padding: 0;
-
 }
 
 .restaurant-card {
@@ -86,7 +82,6 @@ h1.restaurant-section-title {
     padding-bottom: 5px;
     margin-bottom: 10px;
     gap: 20px;
-
 }
 
 .restaurant-cards img {
@@ -95,14 +90,12 @@ h1.restaurant-section-title {
     height: 221px;
     width: 100%;
     object-fit: cover;
-
 }
 
 .restaurant-card-content {
     display: flex;
     flex-direction: column;
     position: relative;
-
 }
 
 .restaurant-card-title {
@@ -113,4 +106,13 @@ h1.restaurant-section-title {
 
 .restaurant-card-subtitle {
     padding-left: 5px;
+}
+
+.nouveau {
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
 }

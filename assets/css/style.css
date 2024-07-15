@@ -112,8 +112,19 @@ a {
   filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.3));
 }
 
+.fa-mobile-screen-button {
+  color: grey;
+  font-size: 19.9px;
+}
+
+.fa-list-ul {
+  color: grey;
+  font-size: 19.9px;
+}
+
 .fa-store {
   color: #9356DC;
+  font-size: 19.9px;
 }
 
 /* Background colour on hover */

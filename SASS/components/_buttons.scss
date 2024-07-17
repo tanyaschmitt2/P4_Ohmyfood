@@ -29,17 +29,18 @@
 
 }
 
+/* Background colour on hover */
 .explore-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    background: linear-gradient(180deg, #FF79DA, #9356DC); 
+    filter: brightness(150%);
     border: none;
     border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
     padding: 15px;
     color: white;
     cursor: pointer;
-    filter: brightness(150%);
     filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.3));
 
 }
@@ -59,13 +60,6 @@
 }
 
 
-
-/* Background colour on hover */
-.explore-button button:hover {
-    background-color: #DEEBFF;
-}
-
-
 .fa-heart {
     display: flex;
     justify-content: right;
@@ -77,6 +71,21 @@
     top: 20px;
     right: 15px;
 }
+
+
+/* Background colour on hover */
+.fa-heart:hover {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    font-size: 30px;
+    border-color: black;
+    font-weight: lighter;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
 
 /*#pinkheart {
 display: flex;
@@ -92,7 +101,7 @@ top: 20px;
 right: 15px;
 }*/
 
-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+/*box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);*/
 
 .fa-utensils {
     display: flex;

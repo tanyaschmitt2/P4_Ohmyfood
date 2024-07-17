@@ -123,8 +123,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
-  background-color: brightness(150%);
+  background: linear-gradient(180deg, #f6ddef, #e7def3);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
   padding: 15px;

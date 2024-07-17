@@ -29,13 +29,12 @@
 
 }
 
-/* Background colour on hover */
+/* Background colour changes on explore button */
 .explore-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, #f6ddef, #e7def3); 
-    
     border: none;
     border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
     padding: 15px;
@@ -70,20 +69,27 @@
     position: absolute;
     top: 20px;
     right: 15px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
-/* Background colour on hover */
+/* Background colour on like button */
 .fa-heart:hover {
     display: flex;
     justify-content: right;
-    cursor: pointer;
+    cursor:pointer;
+    opacity: 0;
     font-size: 30px;
-    border-color: black;
+    border-color: none;
     font-weight: lighter;
     position: absolute;
     top: 20px;
     right: 15px;
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.5 ease-in-out;
 }
 
 

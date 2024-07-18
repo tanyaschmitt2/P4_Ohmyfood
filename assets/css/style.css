@@ -147,7 +147,7 @@ a {
   font-size: 19.9px;
 }
 
-.fa-regular.fa-heart .fa-solid.fa-heart {
+.like-buttons {
   display: flex;
   justify-content: right;
   cursor: pointer;
@@ -167,7 +167,6 @@ a {
 
 #like-button-fill {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  width: 0;
   height: 100%;
   transition: opacity 0.5s ease-in-out;
   -webkit-background-clip: text;

@@ -309,7 +309,7 @@ p.hero-banner-text {
   height: 56px;
   border-radius: 50%;
   padding: 6.7px;
-  background: conic-gradient(from 135deg at top, #474bff 90deg, rgba(0, 0, 0, 0) 0) 0 calc(50% - 4.5px)/19px 9.5px, radial-gradient(farthest-side at bottom left, rgba(0, 0, 0, 0) calc(100% - 6.7px), #474bff calc(100% - 5.6px) 99%, rgba(0, 0, 0, 0)) top right/50% 50% content-box content-box, radial-gradient(farthest-side at top, rgba(0, 0, 0, 0) calc(100% - 6.7px), #474bff calc(100% - 5.6px) 99%, rgba(0, 0, 0, 0)) bottom/100% 50% content-box content-box;
+  background: conic-gradient(from 135deg at top, #ec47ff 90deg, rgba(0, 0, 0, 0) 0) 0 calc(50% - 4.5px)/19px 9.5px, radial-gradient(farthest-side at bottom left, rgba(0, 0, 0, 0) calc(100% - 6.7px), #ec47ff calc(100% - 5.6px) 99%, rgba(0, 0, 0, 0)) top right/50% 50% content-box content-box, radial-gradient(farthest-side at top, rgba(0, 0, 0, 0) calc(100% - 6.7px), #ec47ff calc(100% - 5.6px) 99%, rgba(0, 0, 0, 0)) bottom/100% 50% content-box content-box;
   background-repeat: no-repeat;
   animation: spinner-v8og74 1s infinite linear;
 }
@@ -451,6 +451,11 @@ h1.restaurant-section-title {
   right: 15px;
 }
 
+@keyframes spinner-v8og74 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 #site-search::placeholder { /* pour les navigateurs modernes */
   color: black;
 }

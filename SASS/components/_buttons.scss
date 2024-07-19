@@ -63,32 +63,38 @@
     justify-content: right;
     cursor: pointer;
     font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    
+   
 }
 
 #like-button {
     border-color: black;
     border-radius: 5px;
     font-weight: lighter;
-    overflow: hidden;
-    background-color: transparent;
-  
+    position: absolute;
+    top: 20px;
+    right: 15px;
+
+   
 }
 
 #like-button-fill {
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
-    height: 100%;
+   opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+
+  
+
+/* Background colour on love button */
+#like-button-fill:hover {
+    width: 100%;
     transition: opacity 0.5s ease-in-out;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-/* Background colour on love button */
-#like-button:active #like-button-fill {
-    width: 100%;
 }
 
 /*box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);*/

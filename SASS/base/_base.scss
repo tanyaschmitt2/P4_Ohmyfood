@@ -3,11 +3,9 @@
     --main-bg-color: #F6F6F6;
     --filter-bg-color: #DEEBFF;
     --primary-gray: #D9D9D9;
+    --main-btn-color: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
 
 body {
     display: flex;

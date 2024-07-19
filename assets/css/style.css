@@ -312,6 +312,8 @@ p.hero-banner-text {
   background: conic-gradient(from 135deg at top, #ec47ff 90deg, rgba(0, 0, 0, 0) 0) 0 calc(50% - 4.5px)/19px 9.5px, radial-gradient(farthest-side at bottom left, rgba(0, 0, 0, 0) calc(100% - 6.7px), #ec47ff calc(100% - 5.6px) 99%, rgba(0, 0, 0, 0)) top right/50% 50% content-box content-box, radial-gradient(farthest-side at top, rgba(0, 0, 0, 0) calc(100% - 6.7px), #ec47ff calc(100% - 5.6px) 99%, rgba(0, 0, 0, 0)) bottom/100% 50% content-box content-box;
   background-repeat: no-repeat;
   animation: spinner-v8og74 1s infinite linear;
+  position: absolute;
+  top: 310px;
 }
 
 /*Navigation Menu*/

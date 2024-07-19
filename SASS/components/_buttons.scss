@@ -90,7 +90,7 @@
   
 
 /* Background colour on love button */
-#like-button-fill:hover {
+#like-button-fill:active {
     width: 100%;
     transition: opacity 0.5s ease-in-out;
     -webkit-background-clip: text;

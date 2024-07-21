@@ -1,2 +1,10 @@
 
 
+cards__title::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 0.1875rem;
+    background: #99E2D0;
+}
+

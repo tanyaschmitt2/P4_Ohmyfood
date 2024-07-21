@@ -72,29 +72,27 @@
     font-weight: lighter;
     position: absolute;
     top: 20px;
-    right: 15px;
-
-   
+    right: 15px; 
 }
 
 #like-button-fill {
+   position: absolute;
+   top: 20px;
+   right: 15px;
    opacity: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
-    position: absolute;
-    top: 20px;
-    right: 15px;
+   background: -webkit-linear-gradient(180deg,#9356DC, #FF79DA);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: opacity 350ms ease-in-out;
+   -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
+   
 }
-
 
 
 /* Background colour on love button */
 #like-button-fill:hover {
-    width: 100%;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  
 }
 
 /*box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);*/
@@ -117,4 +115,13 @@
 
 .white-ohmyfood-logo{
     font-family: shrikhand;
+}
+
+
+cards__title::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 0.1875rem;
+    background: #99E2D0;
 }

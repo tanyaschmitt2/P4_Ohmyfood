@@ -1,5 +1,14 @@
+/*loader keyframe*/
+
 @keyframes spinner-v8og74 {
     100% {
        transform: rotate(1turn);
     }
  }
+
+
+ @keyframes disappear {
+   to{
+       transform: scale(3s);
+   }
+}

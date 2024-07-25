@@ -10,7 +10,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: disappear 1ms 3s forwards;
+        animation: disappear 1.5s 1.5s forwards; 
+        
     
         & .loader{
                width: 56px;
@@ -21,10 +22,8 @@
                       radial-gradient(farthest-side at bottom left,#0000 calc(100% - 6.7px),#ec47ff calc(100% - 5.6px) 99%,#0000) top right/50%  50% content-box content-box,
                       radial-gradient(farthest-side at top,#0000 calc(100% - 6.7px),#ec47ff calc(100% - 5.6px) 99%,#0000) bottom   /100% 50% content-box content-box;
                background-repeat: no-repeat;
-               animation: spinner-v8og74 1s infinite linear;    
-              
-    
-           
+               animation: spinner-v8og74 1s infinite linear;
+                 
         }
     }
      

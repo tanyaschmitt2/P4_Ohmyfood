@@ -322,7 +322,7 @@ p.hero-banner-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 1ms 3s forwards;
+  animation: disappear 1.5s 1.5s forwards;
 }
 .container-loader .loader {
   width: 56px;
@@ -486,8 +486,13 @@ cards__title::after {
   }
 }
 @keyframes disappear {
+  from {
+    opacity: 1;
+  }
   to {
-    transform: scale(3s);
+    opacity: 0;
+    display: none;
+    transform: scale(0);
   }
 }
 #site-search::placeholder { /* pour les navigateurs modernes */

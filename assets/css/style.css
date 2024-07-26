@@ -217,41 +217,20 @@ a {
 }*/
 @media (min-width: 1025px) {
   .fonctionnement-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #FFFFFF;
-    padding: 30px 20px 40px 20px;
-  }
-  h1.fonctionnement-section-title {
-    text-align: left;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    height: 100%;
   }
   .fonctionnementcards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 25%;
     justify-content: space-between;
     gap: 5px;
   }
   .fonctionnementcards a {
-    width: 30%;
-  }
-  .fonctionnement-card-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.25rem;
-    width: 25%;
-    gap: 20px;
-    padding: 10px 25px;
-    font-size: 11px;
-    background-color: #f6f6f6;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    position: relative;
   }
   .restaurant-cards {
     display: flex;

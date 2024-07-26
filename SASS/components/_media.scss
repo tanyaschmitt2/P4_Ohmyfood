@@ -1,0 +1,18 @@
+@media (min-width: 1025px) {
+    .fonctionnementcards {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+       
+    }
+
+    .restaurant-cards {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        gap: 5px;
+        padding: 0;
+    }
+}

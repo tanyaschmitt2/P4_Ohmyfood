@@ -220,11 +220,8 @@ a {
     height: 100%;
   }
   .fonctionnementcards {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 25%;
-    justify-content: space-between;
+    width: 30%;
     gap: 5px;
   }
   .fonctionnementcards a {

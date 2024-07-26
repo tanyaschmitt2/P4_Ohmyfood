@@ -3,11 +3,12 @@
 @import './base/base';
 @import './base/reset';
 @import './base/typography';
+@import './tools/variables';
 @import './components/buttons';
 @import './components/carousel';
 @import './components/cover';
 @import './components/dropdown';
-@import './components/media';
+
 @import './layout/footer';
 @import './layout/forms';
 @import './layout/header';
@@ -19,4 +20,5 @@
 @import './tools/keyframes';
 @import './tools/mixins';
 @import './tools/placeholders';
-@import './tools/variables';
+
+@import './components/media';

@@ -215,31 +215,6 @@ a {
     height: 0.1875rem;
     background: #99E2D0;
 }*/
-@media (min-width: 1025px) {
-  .fonctionnement-section {
-    height: 100%;
-  }
-  .fonctionnementcards {
-    flex-direction: row;
-    width: 30%;
-    gap: 5px;
-  }
-  .fonctionnementcards a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .restaurant-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 40%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    gap: 5px;
-    padding: 0;
-  }
-}
 /*Footer*/
 footer {
   background-color: #353535;
@@ -538,6 +513,32 @@ cards__title::after {
 
 #site-search:-o-input-placeholder { /* pour Opera */
   color: black;
+}
+
+@media (min-width: 1025px) {
+  .fonctionnement-section {
+    height: 100%;
+  }
+  .fonctionnementcards {
+    flex-direction: row;
+    width: 30%;
+    gap: 5px;
+  }
+  .fonctionnementcards a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    gap: 5px;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

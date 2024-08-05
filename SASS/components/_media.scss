@@ -2,6 +2,7 @@
 
     .fonctionnement-section {
     height: 100%;
+    padding: 30px 10% 40px 10%;
     }
   
     .fonctionnementcards {
@@ -14,16 +15,39 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 27%;
     }
 
+    .restaurant-section {
+        padding: 30px 10% 40px 10%;
+    }
     .restaurant-cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 40%;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         gap: 5px;
         padding: 0;
+    }
+
+    .restaurant-card {
+        width: 48%;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        color: white;
+        padding-right: 30px;
+
+    }
+
+    .footermenu {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 20px;
+        padding-right: 30px;
     }
 }

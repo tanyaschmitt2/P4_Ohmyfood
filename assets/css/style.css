@@ -220,17 +220,20 @@ footer {
   background-color: #353535;
 }
 
+.white-ohmyfood-logo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
 .footermenu {
   display: flex;
   flex-direction: column;
   color: white;
   margin-bottom: 10px;
   padding-bottom: 10px;
-}
-
-.homepage-footer-ohmyfood-logo img {
-  fill: white;
-  margin-top: 10px;
 }
 
 ul {

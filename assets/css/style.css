@@ -135,7 +135,7 @@ a {
   padding: 15px;
   color: white;
   cursor: pointer;
-  filter: brightness(1.75);
+  filter: brightness(1.35);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -522,8 +522,7 @@ cards__title::after {
   }
   .fonctionnementcards {
     flex-direction: row;
-    width: 30%;
-    gap: 5px;
+    justify-content: space-between;
   }
   .fonctionnementcards a {
     display: flex;
@@ -540,8 +539,8 @@ cards__title::after {
     flex-wrap: wrap;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    gap: 5px;
-    padding: 0;
+    justify-content: space-between;
+    gap: 30px;
   }
   .restaurant-card {
     width: 48%;
@@ -553,11 +552,14 @@ cards__title::after {
     color: white;
     padding-right: 30px;
   }
+  .white-ohmyfood-logo {
+    padding-right: 30px;
+  }
   .footermenu {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
-    padding-right: 30px;
+    padding-right: 100px;
   }
 }
 

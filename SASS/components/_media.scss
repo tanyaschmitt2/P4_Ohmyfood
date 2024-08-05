@@ -7,8 +7,7 @@
   
     .fonctionnementcards {
         flex-direction: row;
-        width: 30%;
-        gap: 5px;
+        justify-content: space-between;
     }
   
     .fonctionnementcards a {
@@ -27,13 +26,15 @@
         flex-wrap: wrap;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        gap: 5px;
-        padding: 0;
+        justify-content: space-between;
+        gap: 30px;
+        
     }
 
     .restaurant-card {
         width: 48%;
         justify-content: space-between;
+        
     }
 
     footer {
@@ -44,10 +45,14 @@
 
     }
 
+    .white-ohmyfood-logo {
+        padding-right: 30px;
+    }
+
     .footermenu {
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: center;
         gap: 20px;
-        padding-right: 30px;
+        padding-right: 100px;
     }
 }

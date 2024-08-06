@@ -1,11 +1,5 @@
 /*Button Style*/
 
-.fa-arrow-left {
-    display: none;
-    color: black;
-}
-
-
 .fa-location-dot {
     display: flex;
     color: #353535;
@@ -65,7 +59,7 @@
    
 }
 
-#like-button {
+.like-button {
     border-color: black;
     border-radius: 5px;
     font-weight: lighter;
@@ -74,7 +68,7 @@
     right: 15px; 
 }
 
-#like-button-fill {
+.like-button-fill {
    position: absolute;
    top: 20px;
    right: 15px;

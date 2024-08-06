@@ -161,7 +161,7 @@ a {
   font-size: 30px;
 }
 
-#like-button {
+.like-button {
   border-color: black;
   border-radius: 5px;
   font-weight: lighter;
@@ -170,7 +170,7 @@ a {
   right: 15px;
 }
 
-#like-button-fill {
+.like-button-fill {
   position: absolute;
   top: 20px;
   right: 15px;
@@ -312,6 +312,11 @@ h1.hero-banner-title {
 p.hero-banner-text {
   text-align: center;
   padding-bottom: 15px;
+}
+
+.back-arrow {
+  display: flex;
+  color: black;
 }
 
 .container-loader {
@@ -474,12 +479,49 @@ h1.restaurant-section-title {
   right: 15px;
 }
 
-cards__title::after {
+.restaurant-photo img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+  margin: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.menu-section-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.greenline::after {
   content: "";
   display: block;
+  font-family: Roboto, sans-serif;
   width: 2.5rem;
   height: 0.1875rem;
   background: #99E2D0;
+}
+
+.dish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  gap: 20px;
+  padding: 10px 25px;
+  font-size: 11px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 /*loader keyframe*/
@@ -566,8 +608,4 @@ cards__title::after {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    padding-right: 100px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+    padding-right: 10

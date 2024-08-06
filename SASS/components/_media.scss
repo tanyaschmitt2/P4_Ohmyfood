@@ -16,6 +16,9 @@
         flex-wrap: wrap;
         gap: 27%;
     }
+    .restaurant-card-content {
+        width: 27%;
+    }
 
     .restaurant-section {
         padding: 30px 10% 40px 10%;
@@ -32,7 +35,7 @@
     }
 
     .restaurant-card {
-        width: 48%;
+        width: 45%;
         justify-content: space-between;
         
     }
@@ -40,13 +43,14 @@
     footer {
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
         color: white;
         padding-right: 30px;
 
     }
 
     .white-ohmyfood-logo {
-        padding-right: 30px;
+           padding: 0px 30px;
     }
 
     .footermenu {

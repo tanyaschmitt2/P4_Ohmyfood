@@ -112,7 +112,7 @@ a {
   height: 16px;
 }
 
-.explore-button {
+.action-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +126,7 @@ a {
 }
 
 /* Background colour changes on explore button */
-.explore-button:hover {
+.action-button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,7 +416,6 @@ h2.fonctionnementcards {
   background-color: #f6f6f6;
   padding: 30px 20px 40px 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 h1.restaurant-section-title {
@@ -534,6 +533,9 @@ cards__title::after {
     flex-wrap: wrap;
     gap: 27%;
   }
+  .restaurant-card-content {
+    width: 27%;
+  }
   .restaurant-section {
     padding: 30px 10% 40px 10%;
   }
@@ -547,17 +549,18 @@ cards__title::after {
     gap: 30px;
   }
   .restaurant-card {
-    width: 48%;
+    width: 45%;
     justify-content: space-between;
   }
   footer {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     color: white;
     padding-right: 30px;
   }
   .white-ohmyfood-logo {
-    padding-right: 30px;
+    padding: 0px 30px;
   }
   .footermenu {
     flex-direction: row;

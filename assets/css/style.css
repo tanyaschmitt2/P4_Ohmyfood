@@ -98,11 +98,6 @@ a {
 }
 
 /*Button Style*/
-.fa-arrow-left {
-  display: none;
-  color: black;
-}
-
 .fa-location-dot {
   display: flex;
   color: #353535;
@@ -484,7 +479,6 @@ h1.restaurant-section-title {
   width: 100%;
   object-fit: cover;
   position: relative;
-  z-index: -1;
 }
 
 .menu-section {
@@ -500,6 +494,27 @@ h1.restaurant-section-title {
 .menu-section-title {
   display: flex;
   flex-wrap: wrap;
+}
+
+.menu-section-title .like-button {
+  border-color: black;
+  border-radius: 5px;
+  font-weight: lighter;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.menu-section-title .like-button-fill {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0;
+  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 350ms ease-in-out;
+  -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 .greenline::after {
@@ -575,9 +590,6 @@ h1.restaurant-section-title {
     flex-wrap: wrap;
     gap: 27%;
   }
-  .restaurant-card-content {
-    width: 27%;
-  }
   .restaurant-section {
     padding: 30px 10% 40px 10%;
   }
@@ -608,4 +620,8 @@ h1.restaurant-section-title {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    padding-right: 10
+    padding-right: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

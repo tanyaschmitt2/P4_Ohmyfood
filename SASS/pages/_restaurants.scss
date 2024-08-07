@@ -1,11 +1,10 @@
+.restaurant-photo img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
 
-.restaurant-photo img{
-        height: 275px;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-        
-    }
+}
 
 .menu-section {
     display: flex;
@@ -15,17 +14,16 @@
     margin: 0;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-
 }
 
-.menu-section-header{
+.menu-section-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.menu-section-title{
+.menu-section-title {
     display: flex;
     flex-wrap: wrap;
     font-family: Shrikhand;
@@ -40,41 +38,40 @@
     position: relative;
     right: -26px;
     top: 6px;
- 
 }
 
 .menu-section-title .like-button-fill {
-   position: relative;
-   right: -26px;
-   top: 6px;
-   opacity: 0;
-   background: -webkit-linear-gradient(180deg,#9356DC, #FF79DA);
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-   transition: opacity 350ms ease-in-out;
-   -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
-   
-}
-    .greenline::after {
-        content: "";
-        display: block;
-        font-family: Roboto,sans-serif;
-        width: 2.5rem;
-        height: 0.1875rem;
-        background: #99E2D0;
-    }
+    position: relative;
+    right: -26px;
+    top: 6px;
+    opacity: 0;
+    background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 350ms ease-in-out;
+    -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
 
-    .dish {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1.25rem;
-        gap: 20px;
-        padding: 10px 25px;
-        font-size: 11px;
-        background-color: #FFFFFF;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        position: relative;
-        
-    }
-    
+}
+
+.greenline::after {
+    content: "";
+    display: block;
+    font-family: Roboto, sans-serif;
+    width: 2.5rem;
+    height: 0.1875rem;
+    background: #99E2D0;
+}
+
+.dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    gap: 20px;
+    padding: 10px 25px;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+
+}

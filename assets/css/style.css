@@ -474,19 +474,32 @@ h1.restaurant-section-title {
   right: 15px;
 }
 
+.homepage-header {
+  height: 63px;
+}
+
+.homepage-header img {
+  height: 36px;
+}
+
+.homepage-header .back-arrow img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .restaurant-photo img {
   height: 275px;
   width: 100%;
   object-fit: cover;
-  position: relative;
 }
 
 .menu-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #FFFFFF;
-  margin: 0;
+  background-color: #f6f6f6;
+  padding: 0px 10px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -525,6 +538,10 @@ h1.restaurant-section-title {
   -webkit-text-fill-color: transparent;
   transition: opacity 350ms ease-in-out;
   -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
+.menu-section-title .like-button-fill:hover {
+  opacity: 1;
 }
 
 .greenline::after {
@@ -631,6 +648,17 @@ h1.restaurant-section-title {
     align-items: center;
     gap: 20px;
     padding-right: 100px;
+  }
+  .menu-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin: 0px 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    z-index: 1;
   }
 }
 

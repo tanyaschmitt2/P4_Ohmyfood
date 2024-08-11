@@ -149,6 +149,7 @@ a {
   font-size: 19.9px;
 }
 
+/*Like Buttons*/
 .like-buttons {
   display: flex;
   justify-content: right;
@@ -182,7 +183,7 @@ a {
   opacity: 1;
 }
 
-/**/
+/*Footer icons*/
 .fa-utensils {
   display: flex;
   flex-direction: row;
@@ -214,6 +215,15 @@ a {
 footer {
   background-color: #353535;
 }
+@media (min-width: 1025px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: white;
+    padding-right: 30px;
+  }
+}
 
 .white-ohmyfood-logo {
   display: flex;
@@ -223,6 +233,11 @@ footer {
   padding-left: 40px;
   padding-top: 20px;
 }
+@media (min-width: 1025px) {
+  .white-ohmyfood-logo {
+    padding: 0px 30px;
+  }
+}
 
 .footermenu {
   display: flex;
@@ -230,6 +245,14 @@ footer {
   color: white;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+@media (min-width: 1025px) {
+  .footermenu {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-right: 100px;
+  }
 }
 
 ul {
@@ -309,11 +332,6 @@ p.hero-banner-text {
   padding-bottom: 15px;
 }
 
-.back-arrow {
-  display: flex;
-  color: black;
-}
-
 .container-loader {
   position: fixed;
   height: 100%;
@@ -359,12 +377,24 @@ p.hero-banner-text {
   height: 30px;
 }
 
+/**Restaurant**/
+.back-arrow {
+  display: flex;
+  color: black;
+}
+
 .fonctionnement-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #FFFFFF;
   padding: 30px 20px 40px 20px;
+}
+@media (min-width: 1025px) {
+  .fonctionnement-section {
+    height: 100%;
+    padding: 30px 10% 40px 10%;
+  }
 }
 
 h1.fonctionnement-section-title {
@@ -375,6 +405,12 @@ h1.fonctionnement-section-title {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (min-width: 1025px) {
+  .fonctionnementcards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .fonctionnement-card-content {
@@ -388,6 +424,11 @@ h1.fonctionnement-section-title {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+}
+@media (min-width: 1025px) {
+  .fonctionnement-card-content {
+    width: 27%;
+  }
 }
 
 .fonctionnement-number-card {
@@ -417,6 +458,11 @@ h2.fonctionnementcards {
   padding: 30px 20px 40px 20px;
   margin-top: 20px;
 }
+@media (min-width: 1025px) {
+  .restaurant-section {
+    padding: 30px 10% 40px 10%;
+  }
+}
 
 h1.restaurant-section-title {
   text-align: left;
@@ -431,6 +477,17 @@ h1.restaurant-section-title {
   gap: 5px;
   padding: 0;
 }
+@media (min-width: 1025px) {
+  .restaurant-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
 
 .restaurant-card {
   border-radius: 30px;
@@ -439,6 +496,12 @@ h1.restaurant-section-title {
   padding-bottom: 5px;
   margin-bottom: 10px;
   gap: 20px;
+}
+@media (min-width: 1025px) {
+  .restaurant-card {
+    width: 45%;
+    justify-content: space-between;
+  }
 }
 
 .restaurant-cards img {
@@ -502,6 +565,19 @@ h1.restaurant-section-title {
   padding: 0px 10px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+@media (min-width: 1025px) {
+  .menu-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin: 0px 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 .menu-section-header {

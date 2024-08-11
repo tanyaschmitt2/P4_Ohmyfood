@@ -204,6 +204,13 @@ a {
   font-family: shrikhand;
 }
 
+/*Restaurant*/
+.orderbutton {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /*cards__title::after {
     content: "";
     display: block;

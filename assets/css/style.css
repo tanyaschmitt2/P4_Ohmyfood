@@ -205,7 +205,7 @@ a {
 }
 
 /*Restaurant*/
-.orderbutton a {
+.orderbutton {
   display: flex;
   justify-content: center;
   align-items: center;

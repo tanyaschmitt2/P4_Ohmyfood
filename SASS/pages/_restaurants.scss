@@ -1,4 +1,4 @@
-.homepage-header{
+.homepage-header {
     height: 63px;
 }
 
@@ -6,20 +6,16 @@
     height: 36px;
 }
 
-
 .homepage-header .back-arrow img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .restaurant-photo img {
     height: 275px;
     width: 100%;
     object-fit: cover;
-  
-
 }
 
 .menu-section {
@@ -30,7 +26,18 @@
     padding: 0px 10px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-   
+
+    @media (min-width: 1025px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #FFFFFF;
+        margin: 0px 10px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        position: absolute;
+        z-index: 1;
+    }
 }
 
 .menu-section-header {
@@ -67,13 +74,11 @@
     -webkit-text-fill-color: transparent;
     transition: opacity 350ms ease-in-out;
     -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
-
 }
 
 .menu-section-title .like-button-fill:hover {
     opacity: 1;
 }
-
 
 .greenline::after {
     content: "";
@@ -95,5 +100,4 @@
     background-color: #FFFFFF;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     position: relative;
-
 }

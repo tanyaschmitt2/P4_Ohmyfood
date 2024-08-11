@@ -1,46 +1,59 @@
        /*Footer*/
 
-       footer{
-        background-color: #353535;
+       footer {
+           background-color: #353535;
+
+           @media (min-width: 1025px) {
+               display: flex;
+               flex-direction: row-reverse;
+               align-items: center;
+               color: white;
+               padding-right: 30px;
+           }
        }
-  
+
        .white-ohmyfood-logo {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        margin-top: 10px;
-        padding-left: 40px;
-        padding-top: 20px;
-       
-    }
+           display: flex;
+           flex-direction: column;
+           color: white;
+           margin-top: 10px;
+           padding-left: 40px;
+           padding-top: 20px;
+
+           @media (min-width: 1025px) {
+               padding: 0px 30px;
+           }
+       }
 
        .footermenu {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        
-    }
+           display: flex;
+           flex-direction: column;
+           color: white;
+           margin-bottom: 10px;
+           padding-bottom: 10px;
 
- 
-    ul{
-        list-style: none;
-        height: 100%;
-    }
-
-    footer p{
-        display: flex;
-        font-size: medium;
-        gap: 5px;
-
-    }
-
-    li{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-         
-    }
+           @media (min-width: 1025px) {
+               flex-direction: row;
+               align-items: center;
+               gap: 20px;
+               padding-right: 100px;
+           }
+       }
 
 
+       ul {
+           list-style: none;
+           height: 100%;
+       }
+
+       footer p {
+           display: flex;
+           font-size: medium;
+           gap: 5px;
+       }
+
+       li {
+           display: flex;
+           flex-direction: column;
+           padding: 0;
+       }

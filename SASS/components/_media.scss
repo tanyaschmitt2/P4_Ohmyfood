@@ -1,75 +1,12 @@
 @media (min-width: 1025px) {
 
-    .fonctionnement-section {
-    height: 100%;
-    padding: 30px 10% 40px 10%;
-    }
-  
-    .fonctionnementcards {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-  
+  /**Homepage**/
+
     .fonctionnementcards a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 27%;
     }
    
-
-    .restaurant-section {
-        padding: 30px 10% 40px 10%;
-    }
-    .restaurant-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        justify-content: space-between;
-        gap: 30px;
-        
-    }
-
-    .restaurant-card {
-        width: 45%;
-        justify-content: space-between;
-        
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        color: white;
-        padding-right: 30px;
-
-    }
-
-    .white-ohmyfood-logo {
-           padding: 0px 30px;
-    }
-
-    .footermenu {
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-        padding-right: 100px;
-    }
-
-  
-    .menu-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: #FFFFFF;
-        margin: 0px 10px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        position: absolute;
-        z-index: 1;
-    }
-    
- 
+ /**Restaurants**/
 }

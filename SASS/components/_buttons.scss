@@ -110,6 +110,7 @@
 
 .orderbutton {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -126,6 +127,7 @@
 /* Background colour changes on order button */
 .orderbutton:hover {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: none;

@@ -681,14 +681,16 @@ h1.restaurant-section-title {
 
 .dish {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   border-radius: 1.25rem;
-  gap: 20px;
   padding: 10px 25px;
-  font-size: 11px;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dishwrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*loader keyframe*/

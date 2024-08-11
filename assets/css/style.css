@@ -657,13 +657,6 @@ h1.restaurant-section-title {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
-.orderbutton {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10PX;
-  width: 20%;
-}
-
 /*loader keyframe*/
 @keyframes spinner-v8og74 {
   100% {

@@ -108,7 +108,36 @@
 
 /*Restaurant*/
 
+.orderbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    border: none;
+    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    width: 20%;
+}
 
+/* Background colour changes on explore button */
+.orderbutton:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    filter: brightness(1.35);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    width: 20%;
+}
 
 /*cards__title::after {
     content: "";

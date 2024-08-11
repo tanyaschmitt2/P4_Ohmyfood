@@ -621,6 +621,13 @@ h1.restaurant-section-title {
   opacity: 1;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .greenline::after {
   content: "";
   display: block;
@@ -648,6 +655,13 @@ h1.restaurant-section-title {
   font-size: 11px;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.orderbutton {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10PX;
+  width: 20%;
 }
 
 /*loader keyframe*/

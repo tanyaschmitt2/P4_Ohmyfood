@@ -28,7 +28,9 @@
     background-color: #FFFFFF;
 }
 
-.fa-arrow-left .back-arrow {
+.back-arrow {
+    display: flex;
+    justify-content: center;
     color: black;
     height: 30px;
-}
+ }

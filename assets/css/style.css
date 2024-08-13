@@ -420,7 +420,9 @@ p.hero-banner-text {
   background-color: #FFFFFF;
 }
 
-.fa-arrow-left .back-arrow {
+.back-arrow {
+  display: flex;
+  justify-content: center;
   color: black;
   height: 30px;
 }
@@ -577,24 +579,6 @@ h1.restaurant-section-title {
   position: absolute;
   top: -220px;
   right: 15px;
-}
-
-.homepage-header {
-  height: 63px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.homepage-header img {
-  height: 36px;
-}
-
-.homepage-header .back-arrow img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .restaurant-photo img {

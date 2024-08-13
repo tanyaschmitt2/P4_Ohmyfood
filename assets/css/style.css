@@ -412,9 +412,17 @@ p.hero-banner-text {
 }
 
 /**Restaurant**/
-.back-arrow {
+.homepage-header {
+  height: 63px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.fa-arrow-left .back-arrow {
   color: black;
+  height: 30px;
 }
 
 .fonctionnement-section {
@@ -573,6 +581,10 @@ h1.restaurant-section-title {
 
 .homepage-header {
   height: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .homepage-header img {

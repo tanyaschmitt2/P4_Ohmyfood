@@ -20,7 +20,15 @@
 }
 
 /**Restaurant**/
-.back-arrow {
+.homepage-header {
+    height: 63px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.fa-arrow-left .back-arrow {
     color: black;
+    height: 30px;
 }

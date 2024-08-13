@@ -596,6 +596,8 @@ h1.restaurant-section-title {
   gap: 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  position: relative;
+  margin-top: -30px;
 }
 @media (min-width: 1025px) {
   .menu-section {
@@ -603,16 +605,14 @@ h1.restaurant-section-title {
     flex-direction: row;
     justify-content: center;
     background-color: #FFFFFF;
-    margin: 0px 10px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    position: absolute;
-    z-index: 1;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
 .menu-section-header {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -620,6 +620,7 @@ h1.restaurant-section-title {
 
 .menu-section-title {
   display: flex;
+  flex-direction: column;
   font-family: Shrikhand;
   font-size: 35px;
   font-weight: 400;

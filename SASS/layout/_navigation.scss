@@ -26,6 +26,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #FFFFFF;
+    position: relative;
 }
 
 .back-arrow {
@@ -33,4 +34,5 @@
     justify-content: center;
     color: black;
     height: 30px;
+    position: absolute;
  }

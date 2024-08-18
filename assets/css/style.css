@@ -418,6 +418,7 @@ p.hero-banner-text {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .back-arrow {
@@ -425,6 +426,7 @@ p.hero-banner-text {
   justify-content: center;
   color: black;
   height: 30px;
+  position: absolute;
 }
 
 .fonctionnement-section {

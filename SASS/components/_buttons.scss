@@ -109,6 +109,15 @@
 
 /*Restaurant*/
 
+.ordersection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 55px 0;
+}
+
+
 .orderbutton {
     display: flex;
     justify-content: center;
@@ -120,8 +129,7 @@
     color: white;
     cursor: pointer;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    width: 45%;
-    margin: 30px 110px;
+
 }
 
 /* Background colour changes on order button */
@@ -136,8 +144,6 @@
     cursor: pointer;
     filter: brightness(1.35);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    width: 45%;
-    margin: 30px 110px;
 }
 
 /*cards__title::after {

@@ -633,7 +633,7 @@ h1.restaurant-section-title {
 .menu-section-title {
   display: flex;
   font-family: Shrikhand;
-  font-size: 28px;
+  font-size: 33px;
   font-weight: 400;
   position: relative;
 }
@@ -650,15 +650,15 @@ h1.restaurant-section-title {
   border-radius: 5px;
   font-weight: lighter;
   position: absolute;
-  top: 20px;
+  top: 105px;
   right: 40px;
   margin-top: -70px;
 }
 
 .like-button-fill-restaurant {
   position: absolute;
-  top: 40px;
-  right: 15px;
+  top: 32px;
+  right: 40px;
   opacity: 0;
   background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
   background-clip: text;

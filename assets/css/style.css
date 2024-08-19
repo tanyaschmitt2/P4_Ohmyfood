@@ -154,6 +154,7 @@ a {
   display: flex;
   justify-content: right;
   cursor: pointer;
+  align-items: center;
   font-size: 30px;
 }
 
@@ -643,15 +644,7 @@ h1.restaurant-section-title {
   }
 }
 
-.like-buttons {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-.menu-section-title .like-button {
+.menu-section-title .like-button-restaurant {
   border-color: black;
   border-radius: 5px;
   font-weight: lighter;
@@ -660,11 +653,11 @@ h1.restaurant-section-title {
 }
 
 .like-button-restaurant {
-  position: relative;
+  position: absolute;
   margin-top: -70px;
 }
 
-.menu-section-title .like-button-fill {
+.menu-section-title .like-button-fill-restaurant {
   position: absolute;
   right: 40px;
   opacity: 0;
@@ -675,7 +668,7 @@ h1.restaurant-section-title {
   -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
-.menu-section-title .like-button-fill:hover {
+.menu-section-title .like-button-fill-restaurant:hover {
   opacity: 1;
 }
 

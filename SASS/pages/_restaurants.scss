@@ -57,29 +57,20 @@
     }
 }
 
-.like-buttons {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    cursor: pointer;
-    font-size: 30px;
-}
-
-.menu-section-title .like-button {
+.menu-section-title .like-button-restaurant {
     border-color: black;
     border-radius: 5px;
     font-weight: lighter;
     position: absolute;
     right: 40px;
-   
 }
 
 .like-button-restaurant {
-    position: relative;
+    position: absolute;
     margin-top: -70px;
 }
 
-.menu-section-title .like-button-fill {
+.menu-section-title .like-button-fill-restaurant {
     position: absolute;
     right: 40px;
     opacity: 0;
@@ -90,7 +81,7 @@
     -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
-.menu-section-title .like-button-fill:hover {
+.menu-section-title .like-button-fill-restaurant:hover {
     opacity: 1;
 }
 

@@ -108,7 +108,8 @@ h1.restaurant-section-title {
     padding-bottom: 5px;
     margin-bottom: 10px;
     gap: 20px;
-
+}
+    .restaurant-card {
     @media (min-width: 1025px) {
         width: 45%;
         justify-content: space-between;

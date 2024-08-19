@@ -32,7 +32,12 @@
 .back-arrow {
     display: flex;
     justify-content: center;
-    color: black;
-    height: 30px;
+    align-items: center;
+    color: black; 
     position: absolute;
+    left: 10%;
+ }
+
+ .back-arrow::before {
+     height: 10px;
  }

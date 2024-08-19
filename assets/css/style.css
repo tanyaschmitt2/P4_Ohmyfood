@@ -424,9 +424,14 @@ p.hero-banner-text {
 .back-arrow {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: black;
-  height: 30px;
   position: absolute;
+  left: 10%;
+}
+
+.back-arrow::before {
+  height: 10px;
 }
 
 .fonctionnement-section {
@@ -626,10 +631,11 @@ h1.restaurant-section-title {
 
 .menu-section-title {
   display: flex;
-  flex-direction: column;
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
+  position: relative;
+  padding-right: 25px;
 }
 @media (min-width: 1025px) {
   .menu-section-title {
@@ -642,7 +648,7 @@ h1.restaurant-section-title {
   border-color: black;
   border-radius: 5px;
   font-weight: lighter;
-  position: relative;
+  position: absolute;
   right: -26px;
   top: 6px;
 }
@@ -653,7 +659,7 @@ h1.restaurant-section-title {
 }
 
 .menu-section-title .like-button-fill {
-  position: relative;
+  position: absolute;
   right: -26px;
   top: 6px;
   opacity: 0;

@@ -208,7 +208,6 @@ h2 {
 /*Restaurant*/
 .orderbutton {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -218,14 +217,13 @@ h2 {
   color: white;
   cursor: pointer;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 10px;
-  width: 20%;
+  width: 45%;
+  margin: 30px 110px;
 }
 
 /* Background colour changes on order button */
 .orderbutton:hover {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: none;
@@ -235,8 +233,8 @@ h2 {
   cursor: pointer;
   filter: brightness(1.35);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 10px;
-  width: 20%;
+  width: 45%;
+  margin: 30px 110px;
 }
 
 /*cards__title::after {
@@ -601,7 +599,6 @@ h1.restaurant-section-title {
   justify-content: center;
   background-color: #f6f6f6;
   padding: 0px 10px;
-  gap: 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
@@ -633,7 +630,7 @@ h1.restaurant-section-title {
 .menu-section-title {
   display: flex;
   font-family: Shrikhand;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 0;
   position: relative;
@@ -651,14 +648,14 @@ h1.restaurant-section-title {
   border-radius: 5px;
   font-weight: lighter;
   position: absolute;
-  top: 105px;
+  top: 100px;
   right: 40px;
   margin-top: -70px;
 }
 
 .like-button-fill-restaurant {
   position: absolute;
-  top: 32px;
+  top: 30px;
   right: 40px;
   opacity: 0;
   background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
@@ -682,6 +679,8 @@ h1.restaurant-section-title {
 
 .menu h2 {
   font-family: Roboto, sans-serif;
+  padding-top: 30px;
+  font-weight: 300;
 }
 
 .greenline::after {

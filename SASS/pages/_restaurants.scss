@@ -10,7 +10,6 @@
     justify-content: center;
     background-color: #f6f6f6;
     padding: 0px 10px;
-    gap: 20px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
@@ -33,7 +32,6 @@
     justify-content: space-between;
     align-items: center;
   
-
     @media (min-width: 1025px) {
 
         justify-content: center;
@@ -45,14 +43,13 @@
 .menu-section-title {
     display: flex;
     font-family: Shrikhand;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 400;
     margin-bottom: 0;
     position: relative;
+  
     
-
     @media (min-width: 1025px) {
-
         justify-content: center;
         font-size: 35px;
 
@@ -66,14 +63,14 @@
     border-radius: 5px;
     font-weight: lighter;
     position: absolute;
-    top: 105px;
+    top: 100px;
     right: 40px;
     margin-top: -70px;
 }
 
 .like-button-fill-restaurant {
     position: absolute;
-    top: 32px;
+    top: 30px;
     right: 40px;
     opacity: 0;
     background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
@@ -98,6 +95,8 @@
 
 .menu h2 {
     font-family: Roboto, sans-serif;
+    padding-top: 30px;
+    font-weight:300;
 }
 
 .greenline::after {

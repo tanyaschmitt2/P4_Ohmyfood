@@ -635,7 +635,6 @@ h1.restaurant-section-title {
   font-size: 28px;
   font-weight: 400;
   position: relative;
-  padding-right: 25px;
 }
 @media (min-width: 1025px) {
   .menu-section-title {
@@ -644,13 +643,20 @@ h1.restaurant-section-title {
   }
 }
 
+.like-buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
 .menu-section-title .like-button {
   border-color: black;
   border-radius: 5px;
   font-weight: lighter;
   position: absolute;
-  right: -26px;
-  top: 6px;
+  right: 40px;
 }
 
 .like-button-restaurant {
@@ -660,8 +666,7 @@ h1.restaurant-section-title {
 
 .menu-section-title .like-button-fill {
   position: absolute;
-  right: -26px;
-  top: 6px;
+  right: 40px;
   opacity: 0;
   background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
   background-clip: text;

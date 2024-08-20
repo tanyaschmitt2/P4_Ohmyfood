@@ -243,6 +243,42 @@ h2 {
   padding: 20px 80px 20px 80px;
 }
 
+/*Restaurant Like Buttons*/
+.restaurant-like-buttons {
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+  align-items: center;
+  font-size: 30px;
+}
+
+.like-button-restaurant {
+  border-color: black;
+  border-radius: 5px;
+  font-weight: lighter;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  margin-top: -70px;
+}
+
+.like-button-fill-restaurant {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  opacity: 0;
+  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 350ms ease-in-out;
+  -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
+/* Background colour on love button */
+.like-button-fill-restaurant:hover {
+  opacity: 1;
+}
+
 /*cards__title::after {
     content: "";
     display: block;
@@ -647,34 +683,6 @@ h1.restaurant-section-title {
     justify-content: center;
     font-size: 35px;
   }
-}
-
-/*Restaurant Like Buttons*/
-.like-button-restaurant {
-  border-color: black;
-  border-radius: 5px;
-  font-weight: lighter;
-  position: absolute;
-  top: 100px;
-  right: 40px;
-  margin-top: -70px;
-}
-
-.like-button-fill-restaurant {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  opacity: 0;
-  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity 350ms ease-in-out;
-  -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
-}
-
-/* Background colour on love button */
-.like-button-fill-restaurant:hover {
-  opacity: 1;
 }
 
 .menu {

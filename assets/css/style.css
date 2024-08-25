@@ -246,6 +246,25 @@ h2 {
   opacity: 1;
 }
 
+/*Check section*/
+.fa-circle-check {
+  display: none;
+}
+
+.fa-circle-check:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0rem 1.563rem 1.563rem 0rem;
+  padding: 15px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 350ms ease-in-out;
+  color: #99E2D0;
+}
+
+/*Order section*/
 .ordersection {
   display: flex;
   flex-direction: column;

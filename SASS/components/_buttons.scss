@@ -53,10 +53,11 @@
 /*Like Buttons*/
 .like-buttons {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     cursor: pointer;
     align-items: center;
     font-size: 30px;
+   
 }
 
 .like-button {
@@ -111,37 +112,26 @@
 
 /*Restaurant Like Buttons*/
 
-.restaurant-like-buttons {
-    display: flex;
-    cursor: pointer;
-    font-size: 30px;
+.like-buttons-restaurant {
     position: relative;
+    margin-top: -142px;
 
     @media (min-width: 1025px) {
         font-size: 35px;
+        
     }
 }
 
 .like-button-restaurant {
-    border-color: black;
-    border-radius: 5px;
-    font-weight: lighter;
-    position: absolute;
     top: 68px;
-    right: 30px;
-    margin-top: -70px;
+    
+    
 }
 
 .like-button-fill-restaurant {
-    position: absolute;
     top: 68px;
-    right: 30px;
-    opacity: 0;
-    background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: opacity 350ms ease-in-out;
-    -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
+    
+   
 }
 
 /* Background colour on love button */
@@ -151,9 +141,22 @@
 }
 
 /*Check section*/
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    border-radius: 0rem 1.563rem 1.563rem 0rem;
+    padding: 15px;
+}
 
 .fa-circle-check {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #99E2D0;
+    color: #99E2D0;
 }
 
 .fa-circle-check:hover {
@@ -165,7 +168,7 @@
     padding: 15px;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: opacity 350ms ease-in-out;
+    transition: transform 400ms ease-in-out;
     color: #99E2D0;
 }
 

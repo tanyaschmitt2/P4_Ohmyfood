@@ -152,7 +152,7 @@ h2 {
 /*Like Buttons*/
 .like-buttons {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   cursor: pointer;
   align-items: center;
   font-size: 30px;
@@ -207,38 +207,22 @@ h2 {
 
 /*Restaurant*/
 /*Restaurant Like Buttons*/
-.restaurant-like-buttons {
-  display: flex;
-  cursor: pointer;
-  font-size: 30px;
+.like-buttons-restaurant {
   position: relative;
+  margin-top: -142px;
 }
 @media (min-width: 1025px) {
-  .restaurant-like-buttons {
+  .like-buttons-restaurant {
     font-size: 35px;
   }
 }
 
 .like-button-restaurant {
-  border-color: black;
-  border-radius: 5px;
-  font-weight: lighter;
-  position: absolute;
   top: 68px;
-  right: 30px;
-  margin-top: -70px;
 }
 
 .like-button-fill-restaurant {
-  position: absolute;
   top: 68px;
-  right: 30px;
-  opacity: 0;
-  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity 350ms ease-in-out;
-  -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 /* Background colour on love button */
@@ -247,8 +231,22 @@ h2 {
 }
 
 /*Check section*/
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0rem 1.563rem 1.563rem 0rem;
+  padding: 15px;
+}
+
 .fa-circle-check {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #99E2D0;
+  color: #99E2D0;
 }
 
 .fa-circle-check:hover {
@@ -260,7 +258,7 @@ h2 {
   padding: 15px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity 350ms ease-in-out;
+  transition: transform 400ms ease-in-out;
   color: #99E2D0;
 }
 
@@ -372,11 +370,12 @@ li {
 
 /* Header */
 .homepage-header {
+  height: 63px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #FFFFFF;
-  margin: 0;
+  position: relative;
 }
 
 .homepage-header-ohmyfood-logo {
@@ -389,45 +388,12 @@ li {
 }
 
 .homepage-header-ohmyfood-logo img {
-  height: 40px;
+  height: 30px;
 }
-
-.homepage-header-location {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
-  background-color: #EAEAEA;
-  gap: 30px;
-  font-weight: 600;
-  font-size: 19px;
-}
-
-.hero-banner-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
-  padding: 30px 0 55px 0;
-}
-
-.hero-banner-info-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-h1.hero-banner-title {
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-p.hero-banner-text {
-  text-align: center;
-  padding-bottom: 15px;
+@media (min-width: 1025px) {
+  .homepage-header-ohmyfood-logo img {
+    height: 35px;
+  }
 }
 
 .container-loader {
@@ -455,47 +421,35 @@ p.hero-banner-text {
 }
 
 /*Navigation Menu*/
-.navbar {
+nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #FFFFFF;
-  height: 63px;
-}
-
-/*Navigation Logo*/
-.ohmyfood-logo {
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.ohmyfood-logo img {
-  height: 30px;
-}
-
-/**Restaurant**/
-.homepage-header {
-  height: 63px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: #FFFFFF;
+  height: 63px;
+}
+
+nav .homepage header {
   position: relative;
 }
 
 .back-arrow {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: black;
+  justify-content: center;
   position: absolute;
-  left: 10%;
+  font-size: 25px;
 }
 
-.back-arrow::before {
-  height: 10px;
+.homepage-header-location {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
+  background-color: #EAEAEA;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .fonctionnement-section {
@@ -681,7 +635,6 @@ h1.restaurant-section-title {
 
 .menu-section-header {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -696,7 +649,7 @@ h1.restaurant-section-title {
 .menu-section-title {
   display: flex;
   font-family: Shrikhand;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -746,14 +699,31 @@ h1.restaurant-section-title {
 .dish {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border-radius: 1.25rem;
   padding: 0px 25px;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  overflow: hidden;
+  animation: infinite;
 }
 
 .dish h3 {
   margin-bottom: 0;
+}
+
+.dish .fa-circle-check:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0rem 1.563rem 1.563rem 0rem;
+  padding: 15px;
+  transform: translateX(50px);
+  transition: transform 400ms ease-in-out;
+  color: #99E2D0;
 }
 
 .dishwrap {

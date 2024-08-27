@@ -1,43 +1,21 @@
 /*Navigation Menu*/
-.navbar {
+nav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #FFFFFF;
-    height: 63px;
-}
-
-/*Navigation Logo*/
-.ohmyfood-logo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.ohmyfood-logo img {
-     height: 30px;
-}
-
-/**Restaurant**/
-.homepage-header {
-    height: 63px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: #FFFFFF;
-    position: relative;
+    height: 63px;  
+    width: 100%;
 }
+
 
 .back-arrow {
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: black; 
+    justify-content: center;
     position: absolute;
-    left: 10%;
+    font-size: 25px;
  }
 
- .back-arrow::before {
-     height: 10px;
- }
+
+
+

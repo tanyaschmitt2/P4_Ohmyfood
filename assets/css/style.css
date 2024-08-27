@@ -426,10 +426,7 @@ nav {
   align-items: center;
   background-color: #FFFFFF;
   height: 63px;
-}
-
-nav .homepage header {
-  position: relative;
+  width: 100%;
 }
 
 .back-arrow {

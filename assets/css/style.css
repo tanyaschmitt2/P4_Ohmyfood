@@ -751,7 +751,7 @@ h2.fonctionnementcards {
   color: #99E2D0;
 }
 
-.dishwrap {
+.dish-name-and-price {
   display: flex;
   justify-content: space-between;
 }

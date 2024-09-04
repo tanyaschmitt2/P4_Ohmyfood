@@ -15,20 +15,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .hero-banner-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-family: Roboto;
 }
 
 .hero-banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+
+/***--Fonctionnement section--*/
 .fonctionnement-section {
     display: flex;
     flex-direction: column;
@@ -44,6 +50,7 @@
 
 h1.fonctionnement-section-title {
     text-align: left;
+    font-family: Roboto;
 }
 
 .fonctionnementcards {
@@ -111,6 +118,7 @@ h2.fonctionnementcards {
 h1.restaurant-section-title {
     text-align: left;
     padding: 15px 5px;
+    font-family: Roboto;
 }
 
 .restaurant-cards {

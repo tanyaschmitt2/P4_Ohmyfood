@@ -756,6 +756,12 @@ h2.fonctionnementcards {
   justify-content: space-between;
 }
 
+.dishprice {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 /*loader keyframe*/
 @keyframes spinner-v8og74 {
   100% {

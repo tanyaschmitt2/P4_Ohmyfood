@@ -723,7 +723,6 @@ h2.fonctionnementcards {
 
 .dish {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 1.25rem;
@@ -751,15 +750,19 @@ h2.fonctionnementcards {
   color: #99E2D0;
 }
 
-.dish-name-and-price {
+.dish-name {
   display: flex;
   justify-content: space-between;
 }
 
-.dishprice {
+.dish-price {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-end;
-  align-items: flex-end;
+}
+
+.dish-checkbox {
+  display: flex;
 }
 
 /*loader keyframe*/

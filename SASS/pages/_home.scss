@@ -13,6 +13,7 @@
 /***--Hero Banner--*/
 .section__hero-banner {
     align-items: center;
+    text-align: center;
     padding: 30px 20px 40px 20px;
 }
 
@@ -23,18 +24,14 @@
     align-items: center;
     text-align: center;
 
+    &--title {
+        font-family: Roboto;
+        margin-bottom: 0px;
 
-&--title {
-   
-    font-family: Roboto;
-    margin-bottom: 0px;
-
-
-&--text {
-    
-    margin-bottom: 25px;
-}
-}
+        &--text {
+            margin-bottom: 25px;
+        }
+    }
 }
 
 
@@ -42,11 +39,16 @@
 .section__fonctionnement {
     background-color: #FFFFFF;
     padding: 30px 20px 40px 20px;
-
+    margin-bottom: 40px;
+   
     @media (min-width: 1025px) {
         height: 100%;
         padding: 30px 10% 40px 10%;
     }
+}
+
+h2.section-title__fonctionnement.section-title {
+    margin-bottom: 25px;
 }
 
 .fonctionnementcards {
@@ -98,16 +100,17 @@ h2.fonctionnementcards {
 }
 
 .section__restaurant {
-    padding: 30px 20px 75px 20px;
-    margin-top: 20px;
+    padding: 0px 20px 75px 20px;
+    margin-top: 0px;
     margin-bottom: -10px;
+
     @media (min-width: 1025px) {
         padding: 30px 10% 40px 10%;
     }
 }
 
 .section-title__restaurant {
-    padding: 15px 5px;   
+    padding: 15px 5px;
 }
 
 .restaurant-cards {
@@ -137,7 +140,8 @@ h2.fonctionnementcards {
     margin-bottom: 10px;
     gap: 20px;
 }
-    .restaurant-card {
+
+.restaurant-card {
     @media (min-width: 1025px) {
         width: 45%;
         justify-content: space-between;

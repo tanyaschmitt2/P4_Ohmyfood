@@ -75,12 +75,95 @@ a {
   text-decoration: none;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
 .section-title {
-  margin: 0;
   font-size: 28px;
   text-align: left;
   font-family: Roboto;
-  font-weight: 400;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__fonctionnement {
+  gap: 20px;
+}
+@media (min-width: 1025px) {
+  .card__fonctionnement {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.card__restaurant {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  gap: 5px;
+  padding: 0;
+}
+@media (min-width: 1025px) {
+  .card__restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.restaurant-card {
+  border-radius: 30px;
+  background-color: white;
+  height: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+@media (min-width: 1025px) {
+  .restaurant-card {
+    width: 45%;
+    justify-content: space-between;
+  }
+}
+
+.card__menu {
+  gap: 20px;
+  align-content: center;
+}
+
+.card__menu h2 p {
+  padding: 0px;
+}
+
+.card__menu p {
+  font-size: 15px;
+}
+
+.card__menu .dish {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 69px;
+  margin-right: 14px;
+  border-radius: 1.25rem;
+  padding: 0px 25px;
+  gap: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+  animation: apparition 1.5 1s forwards;
 }
 
 /*General Navigator Reset*/
@@ -147,6 +230,7 @@ h2 {
 }
 
 /*Button Style*/
+/*Icons*/
 .fa-location-dot {
   display: flex;
   color: #353535;
@@ -154,23 +238,6 @@ h2 {
   justify-content: center;
   width: 12px;
   height: 16px;
-}
-
-.action-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  padding: 15px;
-  color: white;
-  cursor: pointer;
-  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-.action-button:hover {
-  filter: brightness(1.35);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .fa-mobile-screen-button {
@@ -188,12 +255,47 @@ h2 {
   font-size: 19.9px;
 }
 
-/*Like Buttons*/
-.like-buttons {
+/*Footer icons*/
+.fa-utensils {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: white;
+}
+
+.fa-handshake-angle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: white;
+}
+
+/***Buttons***/
+.btn {
   display: flex;
   justify-content: center;
-  cursor: pointer;
   align-items: center;
+}
+
+.explore-button {
+  border: none;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.explore-button:hover {
+  filter: brightness(1.35);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*Like Buttons*/
+.like-buttons {
+  cursor: pointer;
   font-size: 30px;
 }
 
@@ -221,24 +323,6 @@ h2 {
   opacity: 1;
 }
 
-/*Footer icons*/
-.fa-utensils {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-  color: white;
-}
-
-.fa-handshake-angle {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-  color: white;
-}
-
-/*Restaurant*/
 /*Restaurant Like Buttons*/
 .like-buttons-restaurant {
   position: relative;
@@ -264,26 +348,17 @@ h2 {
 
 /*Check section*/
 .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #99E2D0;
   border-radius: 0rem 1.563rem 1.563rem 0rem;
   padding: 15px;
 }
 
 .fa-circle-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   background-color: #99E2D0;
   color: #99E2D0;
 }
 .fa-circle-check:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   border-radius: 0rem 1.563rem 1.563rem 0rem;
   padding: 15px;
@@ -295,16 +370,13 @@ h2 {
 
 /*Order section*/
 .order-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
   border: none;
-  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
   color: white;
   cursor: pointer;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   padding: 20px 80px 20px 80px;
+  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   /* Background colour changes on order button */
 }
 .order-button:hover {
@@ -468,51 +540,42 @@ li {
 }
 
 /***--Hero Banner--*/
-.hero-banner-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.section__hero-banner {
   align-items: center;
+  text-align: center;
   padding: 30px 20px 40px 20px;
 }
 
-.hero-banner-title {
+.hero-banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.hero-banner--title {
   font-family: Roboto;
   margin-bottom: 0px;
 }
-
-.hero-banner-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+.hero-banner--title--text {
   margin-bottom: 25px;
 }
 
 /***--Fonctionnement section--*/
-.fonctionnement-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.section__fonctionnement {
   background-color: #FFFFFF;
   padding: 30px 20px 40px 20px;
+  margin-bottom: 40px;
 }
 @media (min-width: 1025px) {
-  .fonctionnement-section {
+  .section__fonctionnement {
     height: 100%;
     padding: 30px 10% 40px 10%;
   }
 }
 
-.fonctionnement-section-title {
-  text-align: left;
-  font-family: Roboto;
+h2.section-title__fonctionnement.section-title {
+  margin-bottom: 25px;
 }
 
 .fonctionnementcards {
@@ -565,24 +628,19 @@ h2.fonctionnementcards {
   text-align: center;
 }
 
-.restaurant-section {
-  display: flex;
-  flex-direction: column;
-  background-color: #f6f6f6;
-  padding: 30px 20px 75px 20px;
-  margin-top: 20px;
+.section__restaurant {
+  padding: 0px 20px 75px 20px;
+  margin-top: 0px;
   margin-bottom: -10px;
 }
 @media (min-width: 1025px) {
-  .restaurant-section {
+  .section__restaurant {
     padding: 30px 10% 40px 10%;
   }
 }
 
-.restaurants-section-title {
-  text-align: left;
+.section-title__restaurant {
   padding: 15px 5px;
-  font-family: Roboto;
 }
 
 .restaurant-cards {

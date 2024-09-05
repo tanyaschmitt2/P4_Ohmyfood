@@ -69,7 +69,7 @@
     right: 15px;
 }
 
-.like-button-fill {
+.like-button--fill {
     position: absolute;
     top: 20px;
     right: 15px;
@@ -82,7 +82,7 @@
 }
 
 /* Background colour on love button */
-.like-button-fill:hover {
+.like-button--fill:hover {
     opacity: 1;
 }
 
@@ -128,7 +128,7 @@
     
 }
 
-.like-button-fill-restaurant {
+.like-button-restaurant--fill {
     top: 68px;
     
    
@@ -136,7 +136,7 @@
 
 /* Background colour on love button */
 
-.like-button-fill-restaurant:hover {
+.like-button-restaurant--fill:hover {
     opacity: 1;
 }
 

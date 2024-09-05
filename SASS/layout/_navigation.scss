@@ -1,5 +1,5 @@
 /*Navigation Menu*/
-nav {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ nav {
 }
 
 
-.back-arrow {
+.navbar__back-arrow {
     display: flex;
     color: black; 
     justify-content: center;

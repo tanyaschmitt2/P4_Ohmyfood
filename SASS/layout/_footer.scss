@@ -12,20 +12,7 @@
            }
        }
 
-       .white-ohmyfood-logo {
-           display: flex;
-           flex-direction: column;
-           color: white;
-           margin-top: 10px;
-           padding-left: 40px;
-           padding-top: 20px;
-
-           @media (min-width: 1025px) {
-               padding: 0px 30px;
-           }
-       }
-
-       .footermenu {
+       .footer__menu {
            display: flex;
            flex-direction: column;
            color: white;
@@ -40,6 +27,18 @@
            }
        }
 
+       .footer__white-ohmyfood-logo {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-top: 10px;
+        padding-left: 40px;
+        padding-top: 20px;
+
+        @media (min-width: 1025px) {
+            padding: 0px 30px;
+        }
+    }
 
        ul {
            list-style: none;

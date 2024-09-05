@@ -11,6 +11,8 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
+/*Icons*/
+
 .fa-location-dot {
     display: flex;
     color: #353535;
@@ -18,24 +20,6 @@
     justify-content: center;
     width: 12px;
     height: 16px;
-}
-
-.action-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include button-colour;
-    border: none;
-    @include button-border;
-    padding: 15px;
-    color: white;
-    cursor: pointer;
-    @include button-shadow;
-
-    &:hover {
-        filter: brightness(1.35);
-        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    }
 }
 
 .fa-mobile-screen-button {
@@ -53,12 +37,50 @@
     font-size: 19.9px;
 }
 
-/*Like Buttons*/
-.like-buttons {
+/*Footer icons*/
+
+.fa-utensils {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: white;
+}
+
+.fa-handshake-angle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: white;
+}
+
+/***Buttons***/
+
+.btn {
     display: flex;
     justify-content: center;
-    cursor: pointer;
     align-items: center;
+}
+
+.explore-button {
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    @include button-border;
+    @include button-colour;
+    @include button-shadow;
+
+    &:hover {
+        filter: brightness(1.35);
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/*Like Buttons*/
+.like-buttons {
+    cursor: pointer;
     font-size: 30px;
 }
 
@@ -88,29 +110,6 @@
     }
 }
 
-/*Footer icons*/
-
-.fa-utensils {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-    color: white;
-}
-
-.fa-handshake-angle {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-    color: white;
-}
-
-.white-ohmyfood-logo {
-    font-family: shrikhand;
-}
-
-/*Restaurant*/
 
 /*Restaurant Like Buttons*/
 
@@ -140,75 +139,43 @@
 
 /*Check section*/
 .checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #99E2D0;
     border-radius: 0rem 1.563rem 1.563rem 0rem;
     padding: 15px;
 }
 
 .fa-circle-check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
     background-color: #99E2D0;
     color: #99E2D0;
 
-
-.fa-circle-check:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 0rem 1.563rem 1.563rem 0rem;
-    padding: 15px;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: transform 400ms ease-in-out;
-    color: #99E2D0;
-}
+    &:hover {
+        border: none;
+        border-radius: 0rem 1.563rem 1.563rem 0rem;
+        padding: 15px;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: transform 400ms ease-in-out;
+        color: #99E2D0;
+    }
 }
 
 /*Order section*/
 
-.ordersection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0 55px 0;
-}
-
 .order-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 20px 80px 20px 80px;
+    @include button-border;
     @include button-colour;
-    border: none;
-    @include button-border;
-    padding: 15px;
-    color: white;
-    cursor: pointer;
     @include button-shadow;
-    padding: 20px 80px 20px 80px;
-
-
-/* Background colour changes on order button */
-&:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    @include button-border;
-    padding: 15px;
-    color: white;
-    cursor: pointer;
-    filter: brightness(1.75);
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    padding: 20px 80px 20px 80px;
-}
+    
+    /* Background colour changes on order button */
+    &:hover {
+        filter: brightness(1.35);
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 
 

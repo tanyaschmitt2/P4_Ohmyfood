@@ -54,7 +54,7 @@
   --main-bg-color: #F6F6F6;
   --filter-bg-color: #DEEBFF;
   --primary-gray: #D9D9D9;
-  --main-btn-color: linear-gradient(180deg, #FF79DA, #9356DC);
+  --button-color: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 body {
@@ -76,16 +76,11 @@ a {
 }
 
 .section-title {
-  margin: 0rem;
-  font-size: 1.375rem;
-}
-
-.card {
-  background-color: white;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  padding: 0;
-  filter: drop-shadow(0rem 0.188rem 0.938rem rgba(0, 0, 0, 0.1));
+  margin: 0;
+  font-size: 28px;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
 }
 
 /*General Navigator Reset*/
@@ -165,12 +160,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
   border: none;
-  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
   padding: 15px;
   color: white;
   cursor: pointer;
+  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .action-button:hover {
@@ -243,10 +238,6 @@ h2 {
   color: white;
 }
 
-.white-ohmyfood-logo {
-  font-family: shrikhand;
-}
-
 /*Restaurant*/
 /*Restaurant Like Buttons*/
 .like-buttons-restaurant {
@@ -289,7 +280,7 @@ h2 {
   background-color: #99E2D0;
   color: #99E2D0;
 }
-.fa-circle-check .fa-circle-check:hover {
+.fa-circle-check:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,14 +294,6 @@ h2 {
 }
 
 /*Order section*/
-.ordersection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0 55px 0;
-}
-
 .order-button {
   display: flex;
   justify-content: center;
@@ -318,7 +301,6 @@ h2 {
   background: linear-gradient(180deg, #9356DC, #FF79DA);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  padding: 15px;
   color: white;
   cursor: pointer;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -326,17 +308,8 @@ h2 {
   /* Background colour changes on order button */
 }
 .order-button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  padding: 15px;
-  color: white;
-  cursor: pointer;
-  filter: brightness(1.75);
+  filter: brightness(1.35);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  padding: 20px 80px 20px 80px;
 }
 
 /*cards__title::after {

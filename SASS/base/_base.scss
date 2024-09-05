@@ -25,16 +25,20 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0rem;
-    font-size: 1.375rem;
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f6f6;
 }
 
-.card {
-    background-color: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 0;
-    filter: drop-shadow(0rem .188rem .938rem rgba(0, 0, 0, 0.1));
+.section-title {
+    margin: 0;
+    font-size: 28px;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 400;
 }
+
+
 

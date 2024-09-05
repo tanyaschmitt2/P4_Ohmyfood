@@ -11,39 +11,35 @@
 }
 
 /***--Hero Banner--*/
-.hero-banner-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.section__hero-banner {
     align-items: center;
     padding: 30px 20px 40px 20px;
 }
 
-.hero-banner-title {
+.hero-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+
+&--title {
+   
     font-family: Roboto;
     margin-bottom: 0px;
-}
 
-.hero-banner-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+
+&--text {
+    
     margin-bottom: 25px;
+}
+}
 }
 
 
 /***--Fonctionnement section--*/
-.fonctionnement-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.section__fonctionnement {
     background-color: #FFFFFF;
     padding: 30px 20px 40px 20px;
 
@@ -51,11 +47,6 @@
         height: 100%;
         padding: 30px 10% 40px 10%;
     }
-}
-
-.fonctionnement-section-title {
-    text-align: left;
-    font-family: Roboto;
 }
 
 .fonctionnementcards {
@@ -66,7 +57,6 @@
     @media (min-width: 1025px) {
         flex-direction: row;
         justify-content: space-between;
-
     }
 }
 
@@ -103,29 +93,21 @@
     left: -10px;
 }
 
-
 h2.fonctionnementcards {
     text-align: center;
 }
 
-.restaurant-section {
-    display: flex;
-    flex-direction: column;
-    background-color: #f6f6f6;
+.section__restaurant {
     padding: 30px 20px 75px 20px;
     margin-top: 20px;
     margin-bottom: -10px;
-
-
     @media (min-width: 1025px) {
         padding: 30px 10% 40px 10%;
     }
 }
 
-.restaurants-section-title {
-    text-align: left;
-    padding: 15px 5px;
-    font-family: Roboto;
+.section-title__restaurant {
+    padding: 15px 5px;   
 }
 
 .restaurant-cards {

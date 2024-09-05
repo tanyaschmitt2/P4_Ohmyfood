@@ -118,7 +118,10 @@ a {
 
 .h2 {
   font-family: shrikhand;
-  font-size: 12px;
+}
+
+p {
+  font-size: small;
 }
 
 .h1,
@@ -162,7 +165,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
   padding: 15px;
@@ -170,17 +173,7 @@ h2 {
   cursor: pointer;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-
-/* Background colour changes on explore button */
 .action-button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  padding: 15px;
-  color: white;
-  cursor: pointer;
   filter: brightness(1.35);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
@@ -217,8 +210,7 @@ h2 {
   top: 20px;
   right: 15px;
 }
-
-.like-button-fill {
+.like-button--fill {
   position: absolute;
   top: 20px;
   right: 15px;
@@ -228,10 +220,9 @@ h2 {
   -webkit-text-fill-color: transparent;
   transition: opacity 350ms ease-in-out;
   -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
+  /* Background colour on love button */
 }
-
-/* Background colour on love button */
-.like-button-fill:hover {
+.like-button--fill:hover {
   opacity: 1;
 }
 
@@ -270,14 +261,13 @@ h2 {
 
 .like-button-restaurant {
   top: 68px;
+  /* Background fill colour on love button */
 }
-
-.like-button-fill-restaurant {
+.like-button-restaurant--fill {
   top: 68px;
+  /* Background colour on love button */
 }
-
-/* Background colour on love button */
-.like-button-fill-restaurant:hover {
+.like-button-restaurant--fill .like-button-restaurant--fill:hover {
   opacity: 1;
 }
 
@@ -299,8 +289,7 @@ h2 {
   background-color: #99E2D0;
   color: #99E2D0;
 }
-
-.fa-circle-check:hover {
+.fa-circle-check .fa-circle-check:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,11 +311,11 @@ h2 {
   padding: 30px 0 55px 0;
 }
 
-.orderbutton {
+.order-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
   border: none;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
   padding: 15px;
@@ -334,10 +323,9 @@ h2 {
   cursor: pointer;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   padding: 20px 80px 20px 80px;
+  /* Background colour changes on order button */
 }
-
-/* Background colour changes on order button */
-.orderbutton:hover {
+.order-button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,7 +334,7 @@ h2 {
   padding: 15px;
   color: white;
   cursor: pointer;
-  filter: brightness(1.35);
+  filter: brightness(1.75);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   padding: 20px 80px 20px 80px;
 }
@@ -361,6 +349,7 @@ h2 {
 /*Footer*/
 footer {
   background-color: #353535;
+  margin-top: 0px;
 }
 @media (min-width: 1025px) {
   footer {
@@ -392,6 +381,8 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
+  font-size: 18px;
+  font-weight: normal;
   margin-top: 10px;
   padding-left: 40px;
   padding-top: 20px;
@@ -409,7 +400,8 @@ ul {
 
 footer p {
   display: flex;
-  font-size: medium;
+  font-size: 16px;
+  font-weight: normal;
   gap: 5px;
 }
 
@@ -508,6 +500,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px 20px 40px 20px;
 }
 
 .hero-banner-title {
@@ -515,14 +508,18 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: Roboto;
+  margin-bottom: 0px;
 }
 
 .hero-banner-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 /***--Fonctionnement section--*/
@@ -599,8 +596,9 @@ h2.fonctionnementcards {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding: 30px 20px 40px 20px;
+  padding: 30px 20px 75px 20px;
   margin-top: 20px;
+  margin-bottom: -10px;
 }
 @media (min-width: 1025px) {
   .restaurant-section {

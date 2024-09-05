@@ -1,4 +1,16 @@
 /*Button Style*/
+@mixin button-colour {
+    background: linear-gradient(180deg, #9356DC, #FF79DA);
+}
+
+@mixin button-border {
+    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+}
+
+@mixin button-shadow {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
 .fa-location-dot {
     display: flex;
     color: #353535;
@@ -12,27 +24,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    @include button-colour;
     border: none;
-    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+    @include button-border;
     padding: 15px;
     color: white;
     cursor: pointer;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
+    @include button-shadow;
 
-/* Background colour changes on explore button */
-.action-button:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-    padding: 15px;
-    color: white;
-    cursor: pointer;
-    filter: brightness(1.35);
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    &:hover {
+        filter: brightness(1.35);
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .fa-mobile-screen-button {
@@ -57,7 +60,6 @@
     cursor: pointer;
     align-items: center;
     font-size: 30px;
-   
 }
 
 .like-button {
@@ -67,23 +69,23 @@
     position: absolute;
     top: 20px;
     right: 15px;
-}
 
-.like-button--fill {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    opacity: 0;
-    background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: opacity 350ms ease-in-out;
-    -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
-}
+    &--fill {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        opacity: 0;
+        background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: opacity 350ms ease-in-out;
+        -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
 
-/* Background colour on love button */
-.like-button--fill:hover {
-    opacity: 1;
+        /* Background colour on love button */
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 /*Footer icons*/
@@ -118,26 +120,22 @@
 
     @media (min-width: 1025px) {
         font-size: 35px;
-        
     }
 }
 
 .like-button-restaurant {
     top: 68px;
-    
-    
-}
 
-.like-button-restaurant--fill {
-    top: 68px;
-    
-   
-}
+    /* Background fill colour on love button */
+    &--fill {
+        top: 68px;
 
-/* Background colour on love button */
+        /* Background colour on love button */
 
-.like-button-restaurant--fill:hover {
-    opacity: 1;
+        .like-button-restaurant--fill:hover {
+            opacity: 1;
+        }
+    }
 }
 
 /*Check section*/
@@ -157,7 +155,7 @@
     border: none;
     background-color: #99E2D0;
     color: #99E2D0;
-}
+
 
 .fa-circle-check:hover {
     display: flex;
@@ -171,6 +169,7 @@
     transition: transform 400ms ease-in-out;
     color: #99E2D0;
 }
+}
 
 /*Order section*/
 
@@ -182,33 +181,34 @@
     padding: 30px 0 55px 0;
 }
 
-.orderbutton {
+.order-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    @include button-colour;
     border: none;
-    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+    @include button-border;
     padding: 15px;
     color: white;
     cursor: pointer;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    @include button-shadow;
     padding: 20px 80px 20px 80px;
-}
+
 
 /* Background colour changes on order button */
-.orderbutton:hover {
+&:hover {
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+    @include button-border;
     padding: 15px;
     color: white;
     cursor: pointer;
-    filter: brightness(1.35);
+    filter: brightness(1.75);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     padding: 20px 80px 20px 80px;
+}
 }
 
 

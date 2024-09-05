@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px 20px 40px 20px;
 }
 
 .hero-banner-title {
@@ -23,14 +24,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: Roboto;
+    margin-bottom: 0px;
 }
 
 .hero-banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 
@@ -107,8 +112,10 @@ h2.fonctionnementcards {
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
-    padding: 30px 20px 40px 20px;
+    padding: 30px 20px 75px 20px;
     margin-top: 20px;
+    margin-bottom: -10px;
+
 
     @media (min-width: 1025px) {
         padding: 30px 10% 40px 10%;

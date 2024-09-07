@@ -24,23 +24,22 @@
     align-items: center;
     text-align: center;
 
-    &--title {
+    &__title {
         font-family: Roboto;
         margin-bottom: 0px;
 
-        &--text {
+        &__text {
             margin-bottom: 25px;
         }
     }
 }
-
 
 /***--Fonctionnement section--*/
 .section__fonctionnement {
     background-color: #FFFFFF;
     padding: 30px 20px 40px 20px;
     margin-bottom: 40px;
-   
+
     @media (min-width: 1025px) {
         height: 100%;
         padding: 30px 10% 40px 10%;
@@ -51,52 +50,53 @@ h2.section-title__fonctionnement.section-title {
     margin-bottom: 25px;
 }
 
-.fonctionnementcards {
-    display: flex;
-    flex-direction: column;
+.card__fonctionnement {
     gap: 20px;
+}
 
-    @media (min-width: 1025px) {
+@media (min-width: 1025px) {
+    .card__fonctionnement a {
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
-}
+} 
 
-.fonctionnement-card-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.25rem;
-    gap: 20px;
-    padding: 10px 25px;
-    font-size: 11px;
-    background-color: #f6f6f6;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    position: relative;
-
-    @media (min-width: 1025px) {
-        width: 27%;
-    }
-}
-
-.fonctionnement-number-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #9356DC;
-    border: none;
-    border-radius: 50%;
-    width: 12px;
-    padding: 5px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    position: absolute;
-    left: -10px;
-}
-
-h2.fonctionnementcards {
+.card__fonctionnement h2 {
     text-align: center;
+}
+
+.fonctionnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__card-content {
+        background-color: #f6f6f6;
+        border-radius: 1.25rem;
+        gap: 20px;
+        padding: 10px 25px;
+        font-size: 11px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+
+        @media (min-width: 1025px) {
+            width: 27%;
+        }
+
+        &__number-card {
+            background-color: #9356DC;
+            border: none;
+            border-radius: 50%;
+            width: 12px;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            position: absolute;
+            left: -10px;
+        }
+    }
 }
 
 .section__restaurant {
@@ -113,70 +113,57 @@ h2.fonctionnementcards {
     padding: 15px 5px;
 }
 
-.restaurant-cards {
-    display: flex;
-    flex-direction: column;
+.card__restaurant-section {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     gap: 5px;
     padding: 0;
 
     @media (min-width: 1025px) {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
         justify-content: space-between;
         gap: 30px;
     }
 }
 
-.restaurant-card {
-    border-radius: 30px;
-    background-color: white;
+.card__restaurant {
     height: 100%;
+    border-radius: 30px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     gap: 20px;
-}
 
-.restaurant-card {
-    @media (min-width: 1025px) {
-        width: 45%;
-        justify-content: space-between;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &__title {
+            padding-left: 5px;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+
+            &__subtitle {
+                padding-left: 5px;
+
+                img {
+                    border-top-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                    height: 221px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
     }
 }
 
-.restaurant-cards img {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 221px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.restaurant-card-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.restaurant-card-title {
-    padding-left: 5px;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-}
-
-.restaurant-card-subtitle {
-    padding-left: 5px;
-}
-
-.nouveau {
-    background-color: #99E2D0;
-    color: #008766;
-    padding: 5px;
-    position: absolute;
-    top: -220px;
-    right: 15px;
-}
+    .nouveau {
+        background-color: #99E2D0;
+        color: #008766;
+        padding: 5px;
+        position: absolute;
+        top: -220px;
+        right: 15px;
+    }

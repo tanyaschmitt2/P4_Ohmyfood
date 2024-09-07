@@ -92,7 +92,7 @@
     top: 20px;
     right: 15px;
 
-    &--fill {
+    &__fill {
         position: absolute;
         top: 20px;
         right: 15px;
@@ -126,7 +126,7 @@
     top: 68px;
 
     /* Background fill colour on love button */
-    &--fill {
+    &__fill {
         top: 68px;
 
         /* Background colour on love button */
@@ -170,7 +170,7 @@
     @include button-border;
     @include button-colour;
     @include button-shadow;
-    
+
     /* Background colour changes on order button */
     &:hover {
         filter: brightness(1.35);

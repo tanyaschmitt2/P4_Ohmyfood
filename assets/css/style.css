@@ -552,11 +552,11 @@ li {
   align-items: center;
   text-align: center;
 }
-.hero-banner--title {
+.hero-banner__title {
   font-family: Roboto;
   margin-bottom: 0px;
 }
-.hero-banner--title--text {
+.hero-banner__title__text {
   margin-bottom: 25px;
 }
 
@@ -577,40 +577,41 @@ h2.section-title__fonctionnement.section-title {
   margin-bottom: 25px;
 }
 
-.fonctionnementcards {
-  display: flex;
-  flex-direction: column;
+.card__fonctionnement {
   gap: 20px;
 }
+
 @media (min-width: 1025px) {
-  .fonctionnementcards {
+  .card__fonctionnement a {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
+.card__fonctionnement h2 {
+  text-align: center;
+}
 
-.fonctionnement-card-content {
+.fonctionnement {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fonctionnement__card-content {
+  background-color: #f6f6f6;
   border-radius: 1.25rem;
   gap: 20px;
   padding: 10px 25px;
   font-size: 11px;
-  background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 @media (min-width: 1025px) {
-  .fonctionnement-card-content {
+  .fonctionnement__card-content {
     width: 27%;
   }
 }
-
-.fonctionnement-number-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.fonctionnement__card-content__number-card {
   background-color: #9356DC;
   border: none;
   border-radius: 50%;
@@ -621,10 +622,6 @@ h2.section-title__fonctionnement.section-title {
   font-weight: bold;
   position: absolute;
   left: -10px;
-}
-
-h2.fonctionnementcards {
-  text-align: center;
 }
 
 .section__restaurant {
@@ -642,64 +639,47 @@ h2.fonctionnementcards {
   padding: 15px 5px;
 }
 
-.restaurant-cards {
-  display: flex;
-  flex-direction: column;
+.card__restaurant-section {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   gap: 5px;
   padding: 0;
 }
 @media (min-width: 1025px) {
-  .restaurant-cards {
-    display: flex;
+  .card__restaurant-section {
     flex-direction: row;
     flex-wrap: wrap;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     justify-content: space-between;
     gap: 30px;
   }
 }
 
-.restaurant-card {
-  border-radius: 30px;
-  background-color: white;
+.card__restaurant {
   height: 100%;
+  border-radius: 30px;
   padding-bottom: 5px;
   margin-bottom: 10px;
   gap: 20px;
 }
-
-@media (min-width: 1025px) {
-  .restaurant-card {
-    width: 45%;
-    justify-content: space-between;
-  }
+.card__restaurant__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
-.restaurant-cards img {
+.card__restaurant__content__title {
+  padding-left: 5px;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+.card__restaurant__content__title__subtitle {
+  padding-left: 5px;
+}
+.card__restaurant__content__title__subtitle img {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   height: 221px;
   width: 100%;
   object-fit: cover;
-}
-
-.restaurant-card-content {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.restaurant-card-title {
-  padding-left: 5px;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
-}
-
-.restaurant-card-subtitle {
-  padding-left: 5px;
 }
 
 .nouveau {
@@ -778,23 +758,18 @@ h2.fonctionnementcards {
   background: #99E2D0;
 }
 
-.menu-cards {
-  display: flex;
-  flex-direction: column;
+.card__menu {
   gap: 20px;
   align-content: center;
 }
-
-.menu-cards h2 p {
+.card__menu h2 p {
   padding: 0px;
 }
-
-.menu-cards p {
+.card__menu h2 p p {
   font-size: 15px;
 }
 
-.menu-cards .dish {
-  display: flex;
+.card__menu .dish {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 69px;
@@ -810,21 +785,16 @@ h2.fonctionnementcards {
   animation: apparition 1.5 1s forwards;
 }
 
-.dish h3 {
-  margin-bottom: 0;
-}
-
-.dish-name {
+.dish {
   display: flex;
+}
+.dish--name {
   flex-direction: column;
 }
-
-.dish-price {
-  display: flex;
+.dish--name--price {
   flex-direction: column-reverse;
 }
-
-.dish .dish-checkbox {
+.dish--name--price--checkbox {
   display: flex;
   justify-content: center;
   background-color: #99E2D0;
@@ -837,9 +807,11 @@ h2.fonctionnementcards {
   transform: translateX(50px);
   transition: transform 400ms ease-in-out;
 }
-
-.dish-checkbox:hover {
+.dish--name--price--checkbox:hover {
   opacity: 1;
+}
+.dish--name--price--checkbox h3 {
+  margin-bottom: 0;
 }
 
 /*Order section*/

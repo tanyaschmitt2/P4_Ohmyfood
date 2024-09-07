@@ -3,7 +3,7 @@
        footer {
            background-color: #353535;
            margin-top: 0px;
-           
+
            @media (min-width: 1025px) {
                display: flex;
                flex-direction: row-reverse;
@@ -29,19 +29,19 @@
        }
 
        .footer__white-ohmyfood-logo {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        font-size: 18px;
-        font-weight: normal;
-        margin-top: 10px;
-        padding-left: 40px;
-        padding-top: 20px;
+           display: flex;
+           flex-direction: column;
+           color: white;
+           font-size: 18px;
+           font-weight: normal;
+           margin-top: 10px;
+           padding-left: 40px;
+           padding-top: 20px;
 
-        @media (min-width: 1025px) {
-            padding: 0px 30px;
-        }
-    }
+           @media (min-width: 1025px) {
+               padding: 0px 30px;
+           }
+       }
 
        ul {
            list-style: none;

@@ -36,13 +36,14 @@
 
 /***--Fonctionnement section--*/
 .section__fonctionnement {
+    display: flex;
     background-color: #FFFFFF;
     padding: 30px 20px 40px 20px;
     margin-bottom: 40px;
 
     @media (min-width: 1025px) {
         height: 100%;
-        padding: 30px 10% 40px 10%;
+        padding: 30px 17% 40px 10%;
     }
 }
 
@@ -54,11 +55,12 @@ h2.section-title__fonctionnement.section-title {
     gap: 20px;
 }
 
-@media (min-width: 1025px) {
-    .card__fonctionnement a {
+.card__fonctionnement.card {
+    @media (min-width: 1025px) {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: center;
+
     }
 }
 
@@ -83,30 +85,36 @@ h2.section-title__fonctionnement.section-title {
 
         @media (min-width: 1025px) {
             width: 27%;
-        }
 
-        &__number-card {
-            background-color: #9356DC;
-            border: none;
-            border-radius: 50%;
-            width: 12px;
-            padding: 5px;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
-            position: absolute;
-            left: -10px;
         }
     }
 }
 
+.fonctionnement__number-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+    border: none;
+    border-radius: 50%;
+    width: 12px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    left: -10px;
+}
+
 .section__restaurant {
+    display: flex;
+    flex-direction: column;
     padding: 0px 20px 75px 20px;
     margin-top: 0px;
     margin-bottom: -10px;
 
     @media (min-width: 1025px) {
-        padding: 30px 10% 40px 10%;
+        padding: 30px 10% 40px 10%;;
     }
 }
 
@@ -115,42 +123,51 @@ h2.section-title__fonctionnement.section-title {
 }
 
 .card__restaurant-section {
+    background-color: #f6f6f6;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    gap: 5px;
+    gap: 18px;
     padding: 0;
 
     @media (min-width: 1025px) {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 30px;
+
     }
 }
 
 .card__restaurant {
-    gap: 20px;
-    
+    border-radius: 30px;
+
+    @media (min-width: 1025px) {
+
+        width: 45%;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 100%;
         border-radius: 30px;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        gap: 20px;
+        padding-left: 15px;
+    }
 
-        &__title {
+    &__title {
+        padding-left: 0px;
+        padding-bottom: 0%;
+        margin: 0%;
+
+        &__subtitle {
             padding-left: 5px;
-            padding-bottom: 0%;
-            margin-bottom: 0%;
-
-            &__subtitle {
-                padding-left: 5px;
-            }
         }
     }
+}
+
+
+.card__restaurant__content h3 {
+    padding-top: 5px;
+    margin: 0px;
 }
 
 .card__restaurant img {

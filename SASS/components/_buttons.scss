@@ -89,20 +89,19 @@
     border-radius: 5px;
     font-weight: lighter;
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 15px;
 
     &__fill {
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 15px;
         opacity: 0;
-        background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
-        background-clip: text;
+        background: linear-gradient(180deg, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: opacity 350ms ease-in-out;
-        -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
-
+       
         /* Background colour on love button */
         &:hover {
             opacity: 1;

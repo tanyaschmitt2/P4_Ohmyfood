@@ -228,19 +228,18 @@ h2 {
   border-radius: 5px;
   font-weight: lighter;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 15px;
 }
 .like-button__fill {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 15px;
   opacity: 0;
-  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA);
-  background-clip: text;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 350ms ease-in-out;
-  -webkit-text-fill-color: linear-gradient(180deg, #FF79DA, #9356DC);
   /* Background colour on love button */
 }
 .like-button__fill:hover {
@@ -487,6 +486,7 @@ li {
 
 /***--Fonctionnement section--*/
 .section__fonctionnement {
+  display: flex;
   background-color: #FFFFFF;
   padding: 30px 20px 40px 20px;
   margin-bottom: 40px;
@@ -494,7 +494,7 @@ li {
 @media (min-width: 1025px) {
   .section__fonctionnement {
     height: 100%;
-    padding: 30px 10% 40px 10%;
+    padding: 30px 17% 40px 10%;
   }
 }
 
@@ -507,12 +507,13 @@ h2.section-title__fonctionnement.section-title {
 }
 
 @media (min-width: 1025px) {
-  .card__fonctionnement a {
+  .card__fonctionnement.card {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 }
+
 .card__fonctionnement h2 {
   text-align: center;
 }
@@ -535,7 +536,11 @@ h2.section-title__fonctionnement.section-title {
     width: 27%;
   }
 }
-.fonctionnement__card-content__number-card {
+
+.fonctionnement__number-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #9356DC;
   border: none;
   border-radius: 50%;
@@ -549,6 +554,8 @@ h2.section-title__fonctionnement.section-title {
 }
 
 .section__restaurant {
+  display: flex;
+  flex-direction: column;
   padding: 0px 20px 75px 20px;
   margin-top: 0px;
   margin-bottom: -10px;
@@ -564,40 +571,47 @@ h2.section-title__fonctionnement.section-title {
 }
 
 .card__restaurant-section {
+  background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  gap: 5px;
+  gap: 18px;
   padding: 0;
 }
 @media (min-width: 1025px) {
   .card__restaurant-section {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
   }
 }
 
 .card__restaurant {
-  gap: 20px;
+  border-radius: 30px;
+}
+@media (min-width: 1025px) {
+  .card__restaurant {
+    width: 45%;
+  }
 }
 .card__restaurant__content {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 100%;
   border-radius: 30px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  gap: 20px;
+  padding-left: 15px;
 }
-.card__restaurant__content__title {
-  padding-left: 5px;
+.card__restaurant__title {
+  padding-left: 0px;
   padding-bottom: 0%;
-  margin-bottom: 0%;
+  margin: 0%;
 }
-.card__restaurant__content__title__subtitle {
+.card__restaurant__title__subtitle {
   padding-left: 5px;
+}
+
+.card__restaurant__content h3 {
+  padding-top: 5px;
+  margin: 0px;
 }
 
 .card__restaurant img {

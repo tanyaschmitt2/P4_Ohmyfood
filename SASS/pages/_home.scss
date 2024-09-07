@@ -43,7 +43,7 @@
 
     @media (min-width: 1025px) {
         height: 100%;
-        padding: 30px 17% 40px 10%;
+        padding: 30px 10% 40px 10%;
     }
 }
 
@@ -133,6 +133,9 @@ h2.section-title__fonctionnement.section-title {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 10px;
 
     }
 }

@@ -1,0 +1,12 @@
+/*Button Style*/
+@mixin button-colour {
+    background: linear-gradient(180deg, #9356DC, #FF79DA);
+}
+
+@mixin button-border {
+    border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
+}
+
+@mixin button-shadow {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}

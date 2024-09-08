@@ -1,3 +1,6 @@
+
+
+
 /*animation des apparition des plat*/
 @keyframes apparition {
     0% {
@@ -12,41 +15,41 @@
 }
 
 .dish .dish-1 {
-    animation-delay: 3s;
+    animation-delay: $anim-delay 0.3s;
 }
 
 .dish .dish-2 {
-    animation-delay: 6s;
+    animation-delay: $anim-delay 0.6s;
 }
 
 .dish .dish-3 {
-    animation-delay: 9s;
+    animation-delay: $anim-delay 0.9s;
 }
 
 .dish .dish-4 {
-    animation-delay: 12s;
+    animation-delay: $anim-delay 0.12s;
 }
 
 .dish .dish-5 {
-    animation-delay: 15s;
+    animation-delay: $anim-delay 0.15s;
 }
 
 .dish .dish-6 {
-    animation-delay: 18s;
+    animation-delay: $anim-delay 0.18s;
 }
 
 .dish .dish-7 {
-    animation-delay: 21s;
+    animation-delay: $anim-delay 0.21s;
 }
 
 .dish .dish-8 {
-    animation-delay: 24s;
+    animation-delay: $anim-delay 0.24s;
 }
 
 .dish .dish-9 {
-    animation-delay: 27s;
+    animation-delay: $anim-delay 0.27s;
 }
 
 .dish .dish-10 {
-    animation-delay: 30s;
+    animation-delay: $anim-delay 0.30s;
 }

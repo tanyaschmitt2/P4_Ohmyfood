@@ -101,6 +101,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: opacity 350ms ease-in-out;
+        
        
         /* Background colour on love button */
         &:hover {
@@ -122,15 +123,17 @@
 }
 
 .like-button-restaurant {
-    top: 68px;
+    top: 65px;
+    right: -15px;
 
     /* Background fill colour on love button */
     &__fill {
-        top: 68px;
+        top: 65px;
+        right: -15px;
 
         /* Background colour on love button */
 
-        .like-button-restaurant--fill:hover {
+        .like-button-restaurant__fill:hover {
             opacity: 1;
         }
     }

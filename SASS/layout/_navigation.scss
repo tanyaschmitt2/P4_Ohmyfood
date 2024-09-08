@@ -6,13 +6,14 @@
     background-color: #FFFFFF;
     height: 63px;
     width: 100%;
-}
+    position: relative;
 
-.navbar__back-arrow {
-    display: flex;
-    color: black;
-    justify-content: center;
-    position: absolute;
-    left: 5%;
-    font-size: 25px;
+    &__back-arrow {
+        display: flex;
+        color: black;
+        justify-content: flex-start;
+        position: absolute;
+        left: 5%;
+        font-size: 25px;
+    }
 }

@@ -5,9 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     position: relative;
-    
 }
 
 .homepage-header-ohmyfood-logo {
@@ -22,7 +21,7 @@
 .homepage-header-ohmyfood-logo img {
     height: 30px;
 
-    @media (min-width: 1025px) {
+    @media (min-width: var (--tablette)) {
         height: 35px;  
     }
 }

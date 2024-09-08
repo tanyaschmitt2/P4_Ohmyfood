@@ -27,10 +27,10 @@
     <div class="main-container">
         <header class="homepage-header">
             <nav class="navbar">
-            <i class="fa-solid fa-arrow-left navbar__back-arrow"></i>
-            <div class="homepage-header-ohmyfood-logo">
-                <img src="../assets/images/logo/ohmyfood.png" alt="Logo de Ohmyfood blanc">
-            </div>
+                <i class="fa-solid fa-arrow-left navbar__back-arrow"></i>
+                <div class="homepage-header-ohmyfood-logo">
+                    <img src="../assets/images/logo/ohmyfood.png" alt="Logo de Ohmyfood blanc">
+                </div>
             </nav>
         </header>
 
@@ -43,103 +43,155 @@
             </div>
 
             <!--Restaurant menu-->
-            <section class="menu-section">
+            <section class="section__menu section">
                 <div class="menu-section-header">
-                    <h1 class="menu-section-title">À la française </h1>
-                    <div class="like-buttons like-buttons-restaurant">
+                    <h1 class="section-title section-title__menu">À la française </h1>
+                    <div class="btn like-buttons like-buttons-restaurant">
                         <i class="fa-regular fa-heart like-button like-button-restaurant"></i>
-                        <i class="fa-solid fa-heart like-button--fill like-button-restaurant--fill"></i>
+                        <i class="fa-solid fa-heart like-button__fill like-button-restaurant__fill"></i>
                     </div>
                 </div>
 
                 <div class="menu">
 
-                    <h2 class="greenline">ENTRÉES</h2>
-                    <article class="menu-cards">
+                    <section class="menu__entrees">
+                        <h2 class="greenline">ENTRÉES</h2>
+                        <div class="card__menu card">
 
-                        <div class="dish">
-                            <h3>Tartare de poulpe acidulé</h3>
-                            <div class="dishwrap">
-                                <p>Aux zestes d'orange</p>
-                                <p>25<span class="euro">€</span></p>
-                            </div>
+                            <article class="dish dish__1">
+                                <div class="dish__name">
+                                    <h3>Tartare de poulpe acidulé</h3>
+                                    <p>Aux zestes d'orange</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>25<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__2">
+                                <div class="dish__name">
+                                    <h3>Velouté de légumes d'antan</h3>
+                                    <p>Carotte, panais, topinambour</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>35<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__3">
+                                <div class="dish__name">
+                                    <h3>Soupe à l'oignon</h3>
+                                    <p>Revisitée</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>20<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
                         </div>
+                    </section>
 
-                        <div class="dish">
-                            <h3>Velouté de légumes d'antan</h3>
-                            <div class="dishwrap">
-                                <p>Carotte, panais, topinambour</p>
-                                <p>35<span class="euro">€</span></p>
-                            </div>
+                    <section class="menu__plats">
+                        <h2 class="greenline">PLATS</h2>
+                        <div class="card__menu card">
+
+                            <article class="dish dish__4">
+                                <div class="dish__name">
+                                    <h3>Coquilles Saint-Jacques</h3>
+                                    <p>Accompagnées d'une purée de panais</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>40<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__5">
+                                <div class="dish__name">
+                                    <h3>Magret de canard</h3>
+                                    <p>Et parmentier de pommes de terre</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>35<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__6">
+                                <div class="dish__name">
+                                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                    <p>Sur son lit de gnocchis aux légumes</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>44<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
                         </div>
+                    </section>
 
-                        <div class="dish">
-                            <h3>Soupe à l'oignon</h3>
-                            <div class="dishwrap">
-                                <p>Revisitée</p>
-                                <p>20<span class="euro">€</span></p>
-                            </div>
+                    <section class="menu__desserts">
+                        <h2 class="greenline">DESSERTS</h2>
+                        <div class="card__menu card">
+
+                            <article class="dish dish__7">
+                                <div class="dish__name">
+                                    <h3>Pétales de violettes glacés</h3>
+                                    <p>Et purée de noisettes</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>18<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__8">
+                                <div class="dish__name">
+                                    <h3>Fondant au chocolat</h3>
+                                    <p>Revisité</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>22<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__9">
+                                <div class="dish__name">
+                                    <h3>Millefeuille croustillant</h3>
+                                    <p>Myrtilles et pâte d’amande</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>23<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                    </section>
 
-                    <h2 class="greenline">PLATS</h2>
-                    <article class="menu-cards">
-
-                        <div class="dish">
-                            <h3>Coquilles Saint-Jacques</h3>
-                            <div class="dishwrap">
-                                <p>Accompagnées d'une purée de panais</p>
-                                <p>40<span class="euro">€</span></p>
-                            </div>
-                        </div>
-
-                        <div class="dish">
-                            <h3>Magret de canard</h3>
-                            <div class="dishwrap">
-                                <p>Et parmentier de pommes de terre</p>
-                                <p>35<span class="euro">€</span></p>
-                            </div>
-                        </div>
-
-                        <div class="dish">
-                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                            <div class="dishwrap">
-                                <p>Sur son lit de gnocchis aux légumes</p>
-                                <p>44<span class="euro">€</span></p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <h2 class="greenline">DESSERTS</h2>
-                    <article class="menu-cards">
-
-                        <div class="dish">
-                            <h3>Pétales de violettes glacés</h3>
-                            <div class="dishwrap">
-                                <p>Et purée de noisettes</p>
-                                <p>18<span class="euro">€</span></p>
-                            </div>
-                        </div>
                 </div>
-
-                <div class="dish">
-                    <h3>Fondant au chocolat</h3>
-                    <div class="dishwrap">
-                        <p>Revisité</p>
-                        <p>22<span class="euro">€</span></p>
-                    </div>
-                </div>
-
-                <div class="dish">
-                    <h3>Millefeuille croustillant</h3>
-                    <div class="dishwrap">
-                        <p>Myrtilles et pâte d’amande</p>
-                        <p>23<span class="euro">€</span></p>
-                    </div>
-                    </article>
-                </div>
-                <div class="ordersection">
-                    <button class="orderbutton">Commander</button>
+                <div class="section__order section">
+                    <button class="order-button btn">Commander</button>
                 </div>
             </section>
         </main>

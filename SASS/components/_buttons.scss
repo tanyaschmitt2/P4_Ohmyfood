@@ -1,10 +1,8 @@
-
-
 /*Icons*/
 
 .fa-location-dot {
     display: flex;
-    color: #353535;
+    color: var(--footer-black);
     align-items: center;
     justify-content: center;
     width: 12px;
@@ -12,17 +10,17 @@
 }
 
 .fa-mobile-screen-button {
-    color: grey;
+    color: var(--icon-grey);
     font-size: 19.9px;
 }
 
 .fa-list-ul {
-    color: grey;
+    color: var(--icon-grey);
     font-size: 19.9px;
 }
 
 .fa-store {
-    color: #9356DC;
+    color: var(--icon-purple);
     font-size: 19.9px;
 }
 
@@ -33,7 +31,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
-    color: white;
+    color: var(--white);
 }
 
 .fa-handshake-angle {
@@ -41,7 +39,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
-    color: white;
+    color: var(--white);
 }
 
 /***Buttons***/
@@ -55,7 +53,7 @@
 .explore-button {
     border: none;
     padding: 15px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     @include button-border;
     @include button-colour;
@@ -74,7 +72,7 @@
 }
 
 .like-button {
-    border-color: black;
+    border-color: var(--main-color);
     border-radius: 5px;
     font-weight: lighter;
     position: absolute;
@@ -86,12 +84,12 @@
         top: 10px;
         right: 15px;
         opacity: 0;
-        background: linear-gradient(180deg, #FF79DA, #9356DC);
+        background: var(--button-color);
         background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: opacity 350ms ease-in-out;
-        
-       
+
+
         /* Background colour on love button */
         &:hover {
             opacity: 1;
@@ -130,19 +128,17 @@
 
 /*Check section*/
 
-
 .fa-circle-check {
     border: none;
-    background-color: #99E2D0;
-    color: white;
+    background-color: var(--green-line);
+    color: var(--white);
 }
-
 
 .dish__checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #99E2D0;
+    background-color: var(--green-line);
     cursor: pointer;
     height: auto;
     width: 0;
@@ -160,18 +156,16 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: transform 400ms ease-in-out;
-        color: #99E2D0;
+
     }
 }
-
-
 
 
 /*Order section*/
 
 .order-button {
     border: none;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     padding: 20px 80px 20px 80px;
     @include button-border;
@@ -184,13 +178,3 @@
         box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     }
 }
-
-
-
-/*cards__title::after {
-    content: "";
-    display: block;
-    width: 2.5rem;
-    height: 0.1875rem;
-    background: #99E2D0;
-}*/

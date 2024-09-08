@@ -1,5 +1,5 @@
-.dish.dish-1 {
-    animation-delay: 0.3S;
+/*.dish .dish-1 {
+    animation-delay: $dish-1 * $anim-delay;
 }
 
 .dish .dish-2 {
@@ -37,4 +37,13 @@
 .dish .dish-10 {
     animation-delay: 0.30s;
 }
-    
+   */
+
+$dish-no: 10;
+$anim-delay: 0.3s;
+
+@for $i from 1 through $dish-no {
+    .dish-#{$i} {
+        animation-delay: $i * $anim-delay;
+    }
+}

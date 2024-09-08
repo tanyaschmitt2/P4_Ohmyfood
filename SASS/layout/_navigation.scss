@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     height: 63px;
     width: 100%;
     position: relative;
 
     &__back-arrow {
         display: flex;
-        color: black;
+        color: var(--main-color);
         justify-content: flex-start;
         position: absolute;
         left: 5%;

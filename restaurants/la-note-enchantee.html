@@ -27,10 +27,10 @@
     <div class="main-container">
         <header class="homepage-header">
             <nav class="navbar">
-            <i class="fa-solid fa-arrow-left navbar__back-arrow"></i>
-            <div class="homepage-header-ohmyfood-logo">
-                <img src="../assets/images/logo/ohmyfood.png" alt="Logo de Ohmyfood blanc">
-            </div>
+                <i class="fa-solid fa-arrow-left navbar__back-arrow"></i>
+                <div class="homepage-header-ohmyfood-logo">
+                    <img src="../assets/images/logo/ohmyfood.png" alt="Logo de Ohmyfood blanc">
+                </div>
             </nav>
         </header>
 
@@ -43,114 +43,160 @@
             </div>
 
             <!--Restaurant menu-->
-            <section class="menu-section">
+            <section class="section__menu section">
                 <div class="menu-section-header">
-                    <h1 class="menu-section-title">La note enchantée</h1>
-                    <div class="like-buttons like-buttons-restaurant">
+                    <h1 class="section-title section-title__menu">La note enchantée</h1>
+                    <div class="btn like-buttons like-buttons-restaurant">
                         <i class="fa-regular fa-heart like-button like-button-restaurant"></i>
-                        <i class="fa-solid fa-heart like-button--fill like-button-restaurant--fill"></i>
+                        <i class="fa-solid fa-heart like-button__fill like-button-restaurant__fill"></i>
                     </div>
                 </div>
 
                 <div class="menu">
-                    <h2 class="greenline">ENTRÉES</h2>
-                    <article class="menu-cards">
 
-                        <div class="dish">
-                            <h3>Ravioles de foie gras</h3>
-                            <div class="dishwrap">
-                                <p>Accompagnées de leur crème à la truffe</p>
-                                <p>25<span class="euro">€</span></p>
-                            </div>
+                    <section class="menu__entrees">
+                        <h2 class="greenline">ENTRÉES</h2>
+                        <div class="card__menu card">
+
+                            <article class="dish dish__1">
+                                <div class="dish__name">
+                                    <h3>Ravioles de foie gras</h3>
+                                    <p>Accompagnées de leur crème à la truffe</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>25<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__2">
+                                <div class="dish__name">
+                                    <h3>Caviar osciètre</h3>
+                                    <p>Sur blini à la farine de blé noir</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>35<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__3">
+                                <div class="dish__name">
+                                    <h3>Homard et espuma de potiron</h3>
+                                    <p>Marinés aux zestes d'orange</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>20<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__4">
+                                <div class="dish__name">
+                                    <h3>Foie gras de canard cuit entier</h3>
+                                    <p>Confiture de figue et pain toasté</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>35<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
                         </div>
+                    </section>
 
-                        <div class="dish">
-                            <h3>Caviar osciètre</h3>
-                            <div class="dishwrap">
-                                <p>Sur blini à la farine de blé noir</p>
-                                <p>35<span class="euro">€</span></p>
-                            </div>
+                    <section class="menu__plats">
+                        <h2 class="greenline">PLATS</h2>
+                        <div class="card__menu card">
+
+                            <article class="dish dish__5">
+                                <div class="dish__name">
+                                    <h3>Noix de coquilles Saint-Jacques</h3>
+                                    <p>Sur lit de purée de céleri-rave</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>40<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__6">
+                                <div class="dish__name">
+                                    <h3>Langoustine poêlée</h3>
+                                    <p>Purée de patate douce</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>35<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
+
+                            <article class="dish dish__7">
+                                <div class="dish__name">
+                                    <h3>Mijoté de queue de bœuf</h3>
+                                    <p>Et riz sauvage aux zestes de citron</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>45<span class="euro">€</span></p>
+                                </div>
+                                <div class="dish__checkbox">
+                                    <i class="fa-regular fa-circle-check btn"></i>
+                                </div>
+                            </article>
                         </div>
+                    </section>
 
-                        <div class="dish">
-                            <h3>Homard et espuma de potiron</h3>
-                            <div class="dishwrap">
-                                <p>Marinés aux zestes d'orange</p>
-                                <p>20<span class="euro">€</span></p>
-                            </div>
-                        </div>
+                    <section class="menu__desserts">
+                        <h2 class="greenline">DESSERTS</h2>
+                        <div class="card__menu card">
 
-                        <div class="dish">
-                            <h3>Foie gras de canard cuit entier</h3>
-                            <div class="dishwrap">
-                                <p>Confiture de figue et pain toasté</p>
-                                <p>35<span class="euro">€</span></p>
-                            </div>
-                        </div>
-                    </article>
+                            <article class="dish dish__8">
+                                <div class="dish__name">
+                                    <h3>Macaron noisette et chocolat</h3>
+                                    <p>Glace au caramel brun et sel de Guérande</p>
+                                </div>
+                                <div class="dish__price">
+                                    <p>18<span class="euro">€</span></p>
+                                    <div class="card__menu card">
 
-                    <h2 class="greenline">PLATS</h2>
-                    <article class="menu-cards">
+                                        <article class="dish dish__9">
+                                            <div class="dish__name">
+                                                <h3>Baba au rhum revisité</h3>
+                                                <p>Avec son coulis de citron</p>
+                                            </div>
+                                            <div class="dish__price">
+                                                <p>22<span class="euro">€</span></p>
+                                                <div class="card__menu card">
 
-                        <div class="dish">
-                            <h3>Noix de coquilles Saint-Jacques</h3>
-                            <div class="dishwrap">
-                                <p>Sur lit de purée de céleri-rave</p>
-                                <p>40<span class="euro">€</span></p>
-                            </div>
-                        </div>
+                                                    <article class="dish dish__10">
+                                                        <div class="dish__name">
+                                                            <h3>Tarte au citron meringuée</h3>
+                                                            <p>Déstructurée</p>
+                                                        </div>
+                                                        <div class="dish__price">
+                                                            <p>23<span class="euro">€</span></p>
+                                                        </div>
+                                                </div>
 
-                        <div class="dish">
-                            <h3>Langoustine poêlée</h3>
-                            <div class="dishwrap">
-                                <p>Purée de patate douce</p>
-                                <p>35<span class="euro">€</span></p>
-                            </div>
-                        </div>
+                                        </article>
 
-                        <div class="dish">
-                            <h3>Mijoté de queue de bœuf</h3>
-                            <div class="dishwrap">
-                                <p>Et riz sauvage aux zestes de citron</p>
-                                <p>45<span class="euro">€</span></p>
-                            </div>
-                        </div>
-
-                    </article>
-
-                    <h2 class="greenline">DESSERTS</h2>
-                    <article class="menu-cards">
-
-                        <div class="dish">
-                            <h3>Macaron noisette et chocolat</h3>
-                            <div class="dishwrap">
-                                <p>Glace au caramel brun et sel de Guérande</p>
-                                <p>18<span class="euro">€</span></p>
-                            </div>
-                        </div>
-
-                        <div class="dish">
-                            <h3>Baba au rhum revisité</h3>
-                            <div class="dishwrap">
-                                <p>Avec son coulis de citron</p>
-                                <p>22<span class="euro">€</span></p>
-                            </div>
-                        </div>
-
-                        <div class="dish">
-                            <h3>Tarte au citron meringuée</h3>
-                            <div class="dishwrap">
-                                <p>Déstructurée</p>
-                                <p>23<span class="euro">€</span></p>
-                            </div>
-                        </div>
-
-                    </article>
+                                    </div>
+                    </section>
 
                 </div>
-                
-                <div class="ordersection">
-                    <button class="orderbutton">Commander</button>
+                <div class="section__order section">
+                    <button class="order-button btn">Commander</button>
                 </div>
             </section>
         </main>

@@ -1,9 +1,18 @@
 :root {
+  /*Colours*/
   --main-color: black;
   --main-bg-color: #F6F6F6;
-  --filter-bg-color: #DEEBFF;
-  --primary-gray: #D9D9D9;
+  --white: #FFFFFF;
+  --green-line: #99E2D0;
+  --nouveau-green:#008766;
+  --footer-black: #353535;
+  --icon-grey: grey;
+  --icon-purple: #9356DC;
   --button-color: linear-gradient(180deg, #FF79DA, #9356DC);
+  /*Media queries*/
+  --mobile: 768px;
+  --tablette: 1024px;
+  --desktop: 1440px;
 }
 
 body {
@@ -28,7 +37,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f6f6f6;
+  background-color: var(--main-bg-color);
 }
 
 .section-title {
@@ -40,7 +49,7 @@ a {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 /*General Navigator Reset*/
@@ -130,53 +139,91 @@ h2 {
   }
 }
 /*Button Style*/
-/*Colours*/
-/*Media queries*/
 /*Dishes*/
-.dish.dish-1 {
-  animation-delay: 0.3S;
+/*.dish .dish-1 {
+    animation-delay: $dish-1 * $anim-delay;
 }
 
 .dish .dish-2 {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .dish .dish-3 {
-  animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
 
 .dish .dish-4 {
-  animation-delay: 0.12s;
+    animation-delay: 0.12s;
 }
 
 .dish .dish-5 {
-  animation-delay: 0.15s;
+    animation-delay: 0.15s;
 }
 
 .dish .dish-6 {
-  animation-delay: 0.18s;
+    animation-delay: 0.18s;
 }
 
 .dish .dish-7 {
-  animation-delay: 0.21s;
+    animation-delay: 0.21s;
 }
 
 .dish .dish-8 {
-  animation-delay: 0.24s;
+    animation-delay: 0.24s;
 }
 
 .dish .dish-9 {
-  animation-delay: 0.27s;
+    animation-delay: 0.27s;
 }
 
 .dish .dish-10 {
+    animation-delay: 0.30s;
+}
+   */
+.dish-1 {
   animation-delay: 0.3s;
+}
+
+.dish-2 {
+  animation-delay: 0.6s;
+}
+
+.dish-3 {
+  animation-delay: 0.9s;
+}
+
+.dish-4 {
+  animation-delay: 1.2s;
+}
+
+.dish-5 {
+  animation-delay: 1.5s;
+}
+
+.dish-6 {
+  animation-delay: 1.8s;
+}
+
+.dish-7 {
+  animation-delay: 2.1s;
+}
+
+.dish-8 {
+  animation-delay: 2.4s;
+}
+
+.dish-9 {
+  animation-delay: 2.7s;
+}
+
+.dish-10 {
+  animation-delay: 3s;
 }
 
 /*Icons*/
 .fa-location-dot {
   display: flex;
-  color: #353535;
+  color: var(--footer-black);
   align-items: center;
   justify-content: center;
   width: 12px;
@@ -184,17 +231,17 @@ h2 {
 }
 
 .fa-mobile-screen-button {
-  color: grey;
+  color: var(--icon-grey);
   font-size: 19.9px;
 }
 
 .fa-list-ul {
-  color: grey;
+  color: var(--icon-grey);
   font-size: 19.9px;
 }
 
 .fa-store {
-  color: #9356DC;
+  color: var(--icon-purple);
   font-size: 19.9px;
 }
 
@@ -204,7 +251,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
-  color: white;
+  color: var(--white);
 }
 
 .fa-handshake-angle {
@@ -212,7 +259,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
-  color: white;
+  color: var(--white);
 }
 
 /***Buttons***/
@@ -225,10 +272,10 @@ h2 {
 .explore-button {
   border: none;
   padding: 15px;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  background: var(--button-color);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .explore-button:hover {
@@ -243,7 +290,7 @@ h2 {
 }
 
 .like-button {
-  border-color: black;
+  border-color: var(--main-color);
   border-radius: 5px;
   font-weight: lighter;
   position: absolute;
@@ -255,7 +302,7 @@ h2 {
   top: 10px;
   right: 15px;
   opacity: 0;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background: var(--button-color);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 350ms ease-in-out;
@@ -293,15 +340,15 @@ h2 {
 /*Check section*/
 .fa-circle-check {
   border: none;
-  background-color: #99E2D0;
-  color: white;
+  background-color: var(--green-line);
+  color: var(--white);
 }
 
 .dish__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: var(--green-line);
   cursor: pointer;
   height: auto;
   width: 0;
@@ -314,23 +361,21 @@ h2 {
   cursor: pointer;
   opacity: 1;
   width: 59px;
-  border: none;
   border-radius: 0rem 1.563rem 1.563rem 0rem;
   padding: 15px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 400ms ease-in-out;
-  color: #99E2D0;
 }
 
 /*Order section*/
 .order-button {
   border: none;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   padding: 20px 80px 20px 80px;
   border-radius: 1.563rem 1.563rem 1.563rem 1.563rem;
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  background: var(--button-color);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   /* Background colour changes on order button */
 }
@@ -348,15 +393,15 @@ h2 {
 }*/
 /*Footer*/
 footer {
-  background-color: #353535;
+  background-color: var(--footer-black);
   margin-top: 0px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var --tablette) {
   footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    color: white;
+    color: var(--white);
     padding-right: 30px;
   }
 }
@@ -364,7 +409,7 @@ footer {
 .footer__menu {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--white);
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -380,14 +425,14 @@ footer {
 .footer__white-ohmyfood-logo {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--white);
   font-size: 18px;
   font-weight: normal;
   margin-top: 10px;
   padding-left: 40px;
   padding-top: 20px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var --tablette) {
   .footer__white-ohmyfood-logo {
     padding: 0px 30px;
   }
@@ -488,7 +533,7 @@ li {
   justify-content: center;
   align-items: center;
   filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
-  background-color: #EAEAEA;
+  background-color: var(--light-grey);
   gap: 30px;
   font-weight: 600;
   font-size: 19px;
@@ -519,11 +564,11 @@ li {
 /***--Fonctionnement section--*/
 .section__fonctionnement {
   display: flex;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   padding: 30px 20px 40px 20px;
   margin-bottom: 40px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .section__fonctionnement {
     height: 100%;
     padding: 30px 10% 40px 10%;
@@ -538,7 +583,7 @@ h2.section-title__fonctionnement.section-title {
   gap: 20px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: var --tablette) {
   .card__fonctionnement.card {
     display: flex;
     flex-direction: row;
@@ -555,7 +600,7 @@ h2.section-title__fonctionnement.section-title {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: var(--main-bg-color);
   border-radius: 1.25rem;
   gap: 20px;
   padding: 10px 25px;
@@ -563,7 +608,7 @@ h2.section-title__fonctionnement.section-title {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .fonctionnement__card-content {
     width: 27%;
   }
@@ -573,12 +618,12 @@ h2.section-title__fonctionnement.section-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background-color: var(--icon-purple);
   border: none;
   border-radius: 50%;
   width: 12px;
   padding: 5px;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   font-weight: bold;
   position: absolute;
@@ -592,7 +637,7 @@ h2.section-title__fonctionnement.section-title {
   margin-top: 0px;
   margin-bottom: -10px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .section__restaurant {
     padding: 30px 10% 40px 10%;
   }
@@ -603,13 +648,13 @@ h2.section-title__fonctionnement.section-title {
 }
 
 .card__restaurant-section {
-  background-color: #f6f6f6;
+  background-color: var(--main-bg-color);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   gap: 18px;
   padding: 0;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .card__restaurant-section {
     display: flex;
     flex-direction: row;
@@ -623,7 +668,7 @@ h2.section-title__fonctionnement.section-title {
 .card__restaurant {
   border-radius: 30px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .card__restaurant {
     width: 45%;
   }
@@ -658,8 +703,8 @@ h2.section-title__fonctionnement.section-title {
 }
 
 .nouveau {
-  background-color: #99E2D0;
-  color: #008766;
+  background-color: var(--green-line);
+  color: var(--nouveau-green);
   padding: 5px;
   position: absolute;
   top: -220px;
@@ -691,7 +736,7 @@ h2.section-title__fonctionnement.section-title {
   position: relative;
   margin-top: -30px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .section__menu {
     margin-left: 10%;
     margin-right: 10%;
@@ -706,7 +751,7 @@ h2.section-title__fonctionnement.section-title {
   align-items: center;
   gap: 70px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .menu-section-header {
     justify-content: center;
     gap: 61px;
@@ -719,7 +764,7 @@ h2.section-title__fonctionnement.section-title {
   font-weight: normal;
   margin-bottom: 0px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .section-title__menu {
     justify-content: center;
     font-size: 35px;
@@ -731,7 +776,7 @@ h2.section-title__fonctionnement.section-title {
   flex-direction: column;
   gap: 20px;
   align-content: center;
-  background-color: #f6f6f6;
+  background-color: var(--main-bg-color);
   margin-bottom: 40px;
 }
 .card__menu h2 p {
@@ -746,7 +791,7 @@ h2.section-title__fonctionnement.section-title {
   display: block;
   width: 2.5rem;
   height: 0.1875rem;
-  background: #99E2D0;
+  background: var(--green-line);
 }
 
 .dish {
@@ -755,7 +800,7 @@ h2.section-title__fonctionnement.section-title {
   margin-right: 14px;
   border-radius: 15px 15px;
   gap: 5px;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   opacity: 0;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;

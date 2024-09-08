@@ -1,6 +1,6 @@
 /*Button Style*/
 @mixin button-colour {
-    background: linear-gradient(180deg, #9356DC, #FF79DA);
+    background: var(--button-color);
 }
 
 @mixin button-border {

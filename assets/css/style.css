@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 4 |     .dish-#{$i} {
- *   |             ^^
+ * 2 |     animation-delay: $anim-delay * 0.3s;
+ *   |                      ^^^^^^^^^^^
  *   '
- *   SASS\base\_animations.scss 4:13  @import
+ *   SASS\base\_animations.scss 2:22  @import
  *   SASS\main.scss 2:9               root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      .dish-#{$i} {\d\a   \2502              ^^\a   \2575 \a   SASS\\base\\_animations.scss 4:13  @import\a   SASS\\main.scss 2:9               root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      animation-delay: $anim-delay * 0.3s;\d\a   \2502                       ^^^^^^^^^^^\a   \2575 \a   SASS\\base\\_animations.scss 2:22  @import\a   SASS\\main.scss 2:9               root stylesheet";
 }

@@ -129,19 +129,32 @@
 }
 
 /*Check section*/
-.checkbox {
-    background-color: #99E2D0;
-    border-radius: 0rem 1.563rem 1.563rem 0rem;
-    padding: 15px;
-}
+
 
 .fa-circle-check {
     border: none;
     background-color: #99E2D0;
-    color: #99E2D0;
+    color: white;
+}
+
+
+.dish__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    cursor: pointer;
+    height: auto;
+    width: 0;
+    opacity: 0;
+    border-radius: 0 15px 15px 0;
+    padding: 15px;
+    transition: transform 400ms ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 
     &:hover {
-        border: none;
+        cursor: pointer;
+        opacity: 1;
+        width: 59px;
         border-radius: 0rem 1.563rem 1.563rem 0rem;
         padding: 15px;
         background-clip: text;
@@ -150,6 +163,9 @@
         color: #99E2D0;
     }
 }
+
+
+
 
 /*Order section*/
 

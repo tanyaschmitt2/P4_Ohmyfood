@@ -1,9 +1,12 @@
 //sass imports//
-@import './base/animations';
+
 @import './base/base';
 @import './base/reset';
 @import './base/typography';
+@import './tools/keyframes';
+@import './tools/mixins';
 @import './tools/variables';
+@import './base/animations';
 @import './components/buttons';
 @import './components/carousel';
 @import './components/cover';
@@ -16,7 +19,5 @@
 @import './pages/home';
 @import './pages/restaurants';
 @import './tools/functions';
-@import './tools/keyframes';
-@import './tools/mixins';
 @import './tools/placeholders';
 @import './components/media';

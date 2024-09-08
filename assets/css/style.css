@@ -4,8 +4,9 @@
   --main-bg-color: #F6F6F6;
   --white: #FFFFFF;
   --green-line: #99E2D0;
-  --nouveau-green:#008766;
+  --nouveau-green: #008766;
   --footer-black: #353535;
+  --light-grey: #EAEAEA;
   --icon-grey: grey;
   --icon-purple: #9356DC;
   --button-color: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -384,19 +385,12 @@ h2 {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-/*cards__title::after {
-    content: "";
-    display: block;
-    width: 2.5rem;
-    height: 0.1875rem;
-    background: #99E2D0;
-}*/
 /*Footer*/
 footer {
   background-color: var(--footer-black);
   margin-top: 0px;
 }
-@media (min-width: var --tablette) {
+@media (min-width: var(--tablette)) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -413,7 +407,7 @@ footer {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var(--tablette)) {
   .footer__menu {
     flex-direction: row;
     align-items: center;
@@ -432,7 +426,7 @@ footer {
   padding-left: 40px;
   padding-top: 20px;
 }
-@media (min-width: var --tablette) {
+@media (min-width: var(--tablette)) {
   .footer__white-ohmyfood-logo {
     padding: 0px 30px;
   }
@@ -462,7 +456,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   position: relative;
 }
 
@@ -478,7 +472,7 @@ li {
 .homepage-header-ohmyfood-logo img {
   height: 30px;
 }
-@media (min-width: 1025px) {
+@media (min-width: var --tablette) {
   .homepage-header-ohmyfood-logo img {
     height: 35px;
   }
@@ -513,14 +507,14 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   height: 63px;
   width: 100%;
   position: relative;
 }
 .navbar__back-arrow {
   display: flex;
-  color: black;
+  color: var(--main-color);
   justify-content: flex-start;
   position: absolute;
   left: 5%;
@@ -583,7 +577,7 @@ h2.section-title__fonctionnement.section-title {
   gap: 20px;
 }
 
-@media (min-width: var --tablette) {
+@media (min-width: var(--tablette)) {
   .card__fonctionnement.card {
     display: flex;
     flex-direction: row;
@@ -854,11 +848,6 @@ h2.section-title__fonctionnement.section-title {
 
 #site-search:-o-input-placeholder { /* pour Opera */
   color: black;
-}
-
-@media (min-width: 1025px) {
-  /**Homepage**/
-  /**Restaurants**/
 }
 
 /*# sourceMappingURL=style.css.map */

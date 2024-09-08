@@ -56,11 +56,10 @@ h2.section-title__fonctionnement.section-title {
 }
 
 .card__fonctionnement.card {
-    @media (min-width: var (--tablette)) {
+    @media (min-width: var(--tablette)) {
         display: flex;
         flex-direction: row;
         justify-content: center;
-
     }
 }
 
@@ -85,7 +84,6 @@ h2.section-title__fonctionnement.section-title {
 
         @media (min-width: var(--tablette)) {
             width: 27%;
-
         }
     }
 }
@@ -136,7 +134,6 @@ h2.section-title__fonctionnement.section-title {
         justify-content: space-between;
         gap: 30px;
         margin-bottom: 10px;
-
     }
 }
 
@@ -144,7 +141,6 @@ h2.section-title__fonctionnement.section-title {
     border-radius: 30px;
 
     @media (min-width: var(--tablette)) {
-
         width: 45%;
     }
 

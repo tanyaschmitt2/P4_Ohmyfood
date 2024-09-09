@@ -351,13 +351,12 @@ h2 {
   width: 0;
   opacity: 0;
   border-radius: 0 15px 15px 0;
-  padding: 15px;
   transition: transform 400ms ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 .dish:hover .dish__checkbox {
   cursor: pointer;
   opacity: 1;
-  width: 59px;
+  width: 75px;
   border-radius: 0 15px 15px 0;
   background-color: var(--green-line);
   transition: transform 400ms ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
@@ -511,7 +510,7 @@ li {
   color: var(--main-color);
   justify-content: flex-start;
   position: absolute;
-  left: 5%;
+  left: 5px;
   top: 20px;
   font-size: 25px;
 }
@@ -738,7 +737,8 @@ h2.section-title__fonctionnement.section-title {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 70px;
+  justify-content: space-between;
+  padding-right: 20px;
 }
 @media (min-width: 1024px) {
   .menu-section-header {
@@ -796,7 +796,45 @@ h2.section-title__fonctionnement.section-title {
   padding: 0px;
   margin-left: 0px;
   overflow: hidden;
-  transition: 0.3s;
+}
+
+.dish__1 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__2 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__3 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__4 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__5 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__6 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__7 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__8 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__9 {
+  animation: apparition 1.5 1s forwards;
+}
+
+.dish__10 {
   animation: apparition 1.5 1s forwards;
 }
 
@@ -821,28 +859,4 @@ h2.section-title__fonctionnement.section-title {
 
 /*Order section*/
 .section__order {
-  align-items: center;
-  padding: 30px 0 55px 0;
-}
-
-#site-search::placeholder { /* pour les navigateurs modernes */
-  color: black;
-}
-
-#site-search::-webkit-input-placeholder { /* pour Google Chrome */
-  color: black;
-}
-
-#site-search::-moz-placeholder { /* pour Mozilla Firefox */
-  color: black;
-}
-
-#site-search:-ms-input-placeholder { /* pour Internet Explorer */
-  color: black;
-}
-
-#site-search:-o-input-placeholder { /* pour Opera */
-  color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
+  ali

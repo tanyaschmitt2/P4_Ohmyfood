@@ -470,7 +470,7 @@ li {
 .homepage-header-ohmyfood-logo img {
   height: 30px;
 }
-@media (min-width: var(--tablette)) {
+@media (min-width: 1024px) {
   .homepage-header-ohmyfood-logo img {
     height: 35px;
   }

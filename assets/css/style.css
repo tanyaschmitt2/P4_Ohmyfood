@@ -57,7 +57,7 @@ a {
 *,
 *:before,
 *:after {
-  box-sizing: none;
+  box-sizing: content-box;
 }
 
 .body,
@@ -354,7 +354,7 @@ h2 {
   padding: 15px;
   transition: transform 400ms ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
-.dish__checkbox:hover {
+.dish:hover .dish__checkbox {
   cursor: pointer;
   opacity: 1;
   width: 59px;

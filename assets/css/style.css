@@ -793,49 +793,58 @@ h2.section-title__fonctionnement.section-title {
   opacity: 0;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  padding: 0px;
-  margin-left: 0px;
+  padding-left: 15px;
   overflow: hidden;
 }
 
 .dish__1 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 0s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__2 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 0.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__3 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__4 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 1.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__5 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 2s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__6 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 2.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__7 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 3s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__8 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 3.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__9 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 4s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__10 {
-  animation: apparition 1.5 1s forwards;
+  animation: apparition 300ms 4.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .dish__name {
@@ -859,4 +868,28 @@ h2.section-title__fonctionnement.section-title {
 
 /*Order section*/
 .section__order {
-  ali
+  align-items: center;
+  padding: 30px 0 55px 0;
+}
+
+#site-search::placeholder { /* pour les navigateurs modernes */
+  color: black;
+}
+
+#site-search::-webkit-input-placeholder { /* pour Google Chrome */
+  color: black;
+}
+
+#site-search::-moz-placeholder { /* pour Mozilla Firefox */
+  color: black;
+}
+
+#site-search:-ms-input-placeholder { /* pour Internet Explorer */
+  color: black;
+}
+
+#site-search:-o-input-placeholder { /* pour Opera */
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -516,6 +516,7 @@ li {
   justify-content: flex-start;
   position: absolute;
   left: 5%;
+  top: 20px;
   font-size: 25px;
 }
 
